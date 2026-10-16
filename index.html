@@ -6,20 +6,23 @@
 
   <title>FOUDA ABA | Dr. Mohamed Fouda</title>
 
-  <meta name="description" content="FOUDA ABA – Behavioral & Development Center specializing in ABA, Autism, Special Education, Professional Training, Consultation and Research.">
+  <meta name="description" content="FOUDA ABA – Behavioral & Development Center specializing in Applied Behavior Analysis, Autism, Special Education, Professional Training and Research.">
 
   <link rel="icon" href="./logo.png">
 
   <style>
     :root {
       --navy: #0b376b;
-      --blue: #146bb3;
+      --blue: #146bbb;
       --teal: #1fa889;
-      --dark: #16334d;
-      --light: #f5f9fc;
+      --green: #2f9d73;
+      --light: #f5f8fb;
       --white: #ffffff;
-      --gray: #66788b;
-      --line: #e2eaf2;
+      --dark: #172033;
+      --gray: #5d6878;
+      --line: #e2e8f0;
+      --shadow: 0 10px 30px rgba(11,55,107,0.10);
+      --radius: 18px;
     }
 
     * {
@@ -44,7 +47,12 @@
       color: inherit;
     }
 
-    /* HEADER */
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* NAVIGATION */
 
     header {
       position: sticky;
@@ -52,7 +60,7 @@
       z-index: 1000;
       background: rgba(255,255,255,0.97);
       border-bottom: 1px solid var(--line);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.04);
     }
 
     .nav {
@@ -70,6 +78,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      min-width: 230px;
     }
 
     .brand img {
@@ -79,13 +88,14 @@
       border-radius: 10px;
     }
 
-    .brand-text h2 {
+    .brand-text strong {
+      display: block;
       color: var(--navy);
-      font-size: 21px;
-      line-height: 1.2;
+      font-size: 20px;
     }
 
-    .brand-text p {
+    .brand-text span {
+      display: block;
       color: var(--teal);
       font-size: 12px;
       font-weight: bold;
@@ -95,27 +105,37 @@
       display: flex;
       align-items: center;
       gap: 25px;
-      font-weight: 600;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .menu a {
       color: var(--dark);
+      font-weight: 600;
+      font-size: 15px;
+      transition: 0.2s;
     }
 
     .menu a:hover {
-      color: var(--teal);
+      color: var(--blue);
     }
 
     .language {
       border: 1px solid var(--line);
-      padding: 8px 13px;
+      background: white;
+      padding: 8px 14px;
       border-radius: 20px;
-      color: var(--blue);
+      cursor: pointer;
       font-weight: bold;
+      color: var(--navy);
     }
 
     /* HERO */
 
     .hero {
       background:
-        linear-gradient(135deg, #ffffff 0%, #f0f7fb 55%, #e7f7f2 100%);
+        radial-gradient(circle at 80% 20%, rgba(31,168,137,0.13), transparent 28%),
+        linear-gradient(135deg, #ffffff, #eef7fb);
       padding: 80px 24px;
     }
 
@@ -123,37 +143,39 @@
       max-width: 1200px;
       margin: auto;
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 55px;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
       align-items: center;
     }
 
     .badge {
       display: inline-block;
+      background: #e8f3f7;
+      color: var(--navy);
       padding: 8px 16px;
-      background: #eaf4fa;
-      color: var(--blue);
-      border-radius: 25px;
-      font-size: 14px;
+      border-radius: 30px;
+      font-size: 13px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
     .hero h1 {
-      font-size: clamp(44px, 6vw, 72px);
+      font-size: clamp(46px, 7vw, 78px);
       line-height: 1.02;
       color: var(--navy);
       margin-bottom: 22px;
+      letter-spacing: -2px;
     }
 
     .hero h1 span {
       color: var(--teal);
+      display: block;
     }
 
-    .hero-text {
-      font-size: 18px;
+    .hero p {
       color: var(--gray);
-      max-width: 650px;
+      font-size: 18px;
+      max-width: 700px;
       margin-bottom: 30px;
     }
 
@@ -165,8 +187,8 @@
 
     .btn {
       display: inline-block;
-      padding: 13px 23px;
-      border-radius: 8px;
+      padding: 13px 24px;
+      border-radius: 10px;
       font-weight: bold;
       transition: 0.2s;
     }
@@ -182,49 +204,48 @@
     }
 
     .btn-secondary {
-      border: 2px solid var(--teal);
-      color: var(--teal);
       background: white;
+      color: var(--navy);
+      border: 1px solid #cbd8e5;
     }
 
     .btn-secondary:hover {
-      background: var(--teal);
-      color: white;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
     }
-
-    /* PROFILE */
 
     .profile-card {
       background: white;
-      border-radius: 25px;
-      padding: 25px;
-      box-shadow: 0 15px 45px rgba(11,55,107,0.12);
-      text-align: center;
       border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 25px;
+      box-shadow: var(--shadow);
+      text-align: center;
     }
 
     .profile-card img {
       width: 100%;
-      max-width: 380px;
-      height: 430px;
+      max-width: 330px;
+      height: 390px;
       object-fit: cover;
+      object-position: center top;
       border-radius: 18px;
-      display: block;
       margin: auto;
     }
 
     .profile-card h3 {
-      margin-top: 20px;
+      margin-top: 18px;
       color: var(--navy);
-      font-size: 25px;
+      font-size: 22px;
     }
 
     .profile-card p {
-      color: var(--teal);
-      font-weight: bold;
+      color: var(--gray);
+      font-size: 14px;
+      margin-top: 5px;
     }
 
-    /* SECTIONS */
+    /* GENERAL SECTIONS */
 
     section {
       padding: 75px 24px;
@@ -241,213 +262,265 @@
     }
 
     .section-title h2 {
-      color: var(--navy);
       font-size: 38px;
+      color: var(--navy);
       margin-bottom: 10px;
     }
 
     .section-title p {
       color: var(--gray);
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
     }
 
-    /* CARDS */
+    /* ABOUT */
 
-    .cards {
+    .about-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
     }
 
     .card {
       background: white;
-      padding: 30px;
-      border-radius: 16px;
       border: 1px solid var(--line);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.04);
-      transition: 0.25s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(11,55,107,0.10);
-    }
-
-    .icon {
-      width: 55px;
-      height: 55px;
-      border-radius: 14px;
-      background: #eaf7f3;
-      color: var(--teal);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 25px;
-      margin-bottom: 18px;
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.04);
     }
 
     .card h3 {
       color: var(--navy);
-      font-size: 21px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 22px;
     }
 
     .card p {
       color: var(--gray);
     }
 
-    /* ABOUT */
+    /* SERVICES */
 
-    .about {
+    .services {
       background: white;
     }
 
-    .about-grid {
+    .service-grid {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 55px;
-      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .about-image img {
-      width: 100%;
-      max-width: 450px;
-      display: block;
-      margin: auto;
-      border-radius: 20px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    .service-card {
+      background: var(--light);
+      border: 1px solid var(--line);
+      padding: 28px;
+      border-radius: var(--radius);
+      transition: 0.25s;
     }
 
-    .about-content h2 {
-      color: var(--navy);
-      font-size: 40px;
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #e7f4f0;
+      color: var(--teal);
+      font-size: 25px;
       margin-bottom: 18px;
     }
 
-    .about-content p {
+    .service-card h3 {
+      color: var(--navy);
+      margin-bottom: 9px;
+    }
+
+    .service-card p {
       color: var(--gray);
-      margin-bottom: 15px;
-      font-size: 17px;
+      font-size: 14px;
     }
 
-    /* HIGHLIGHT */
+    /* TRAINING */
 
-    .highlight {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: white;
-      text-align: center;
+    .training {
+      background: linear-gradient(120deg, #edf7f5, #f6f9fc);
     }
 
-    .highlight h2 {
-      font-size: 38px;
-      margin-bottom: 15px;
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .highlight p {
-      max-width: 800px;
-      margin: auto;
-      opacity: 0.92;
+    .training-card {
+      background: white;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+    }
+
+    .training-card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .training-card ul {
+      padding-left: 20px;
+      color: var(--gray);
+    }
+
+    /* RESEARCH */
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .research-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 30px;
+      border: 1px solid var(--line);
+    }
+
+    .research-card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
     }
 
     /* CONTACT */
 
     .contact {
-      background: white;
+      background: var(--navy);
+      color: white;
     }
 
-    .contact-box {
-      max-width: 850px;
-      margin: auto;
-      background: var(--light);
-      padding: 40px;
-      border-radius: 20px;
+    .contact .section-title h2 {
+      color: white;
+    }
+
+    .contact .section-title p {
+      color: #d9e5f2;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius);
+      padding: 25px;
       text-align: center;
-      border: 1px solid var(--line);
     }
 
-    .contact-box h2 {
-      color: var(--navy);
-      margin-bottom: 15px;
+    .contact-card h3 {
+      margin-bottom: 8px;
     }
 
-    .contact-box p {
-      color: var(--gray);
-      margin-bottom: 22px;
+    .contact-card p {
+      color: #d9e5f2;
     }
 
     /* FOOTER */
 
     footer {
-      background: #082c55;
+      background: #06294f;
       color: white;
-      padding: 35px 24px;
+      padding: 30px 24px;
       text-align: center;
     }
 
-    footer h3 {
-      margin-bottom: 7px;
+    footer p {
+      color: #cbd8e5;
+      font-size: 14px;
     }
 
-    footer p {
-      opacity: 0.8;
-      font-size: 14px;
+    /* RTL */
+
+    body.rtl {
+      direction: rtl;
+      text-align: right;
+    }
+
+    body.rtl .menu {
+      direction: rtl;
+    }
+
+    body.rtl .hero h1 {
+      letter-spacing: 0;
+    }
+
+    body.rtl .training-card ul {
+      padding-left: 0;
+      padding-right: 20px;
     }
 
     /* MOBILE */
 
     @media (max-width: 900px) {
 
+      .nav {
+        flex-direction: column;
+      }
+
       .menu {
-        gap: 12px;
-        font-size: 14px;
+        justify-content: center;
       }
 
       .hero-grid,
-      .about-grid {
+      .about-grid,
+      .research-grid {
         grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .training-grid,
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
       .hero {
         padding: 55px 20px;
       }
-
-      .profile-card {
-        max-width: 500px;
-        margin: auto;
-      }
-
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
     }
 
-    @media (max-width: 650px) {
-
-      .nav {
-        flex-direction: column;
-        padding: 15px;
-      }
-
-      .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .hero h1 {
-        font-size: 45px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 600px) {
 
       section {
         padding: 55px 18px;
       }
 
+      .menu {
+        gap: 12px;
+      }
+
+      .menu a {
+        font-size: 13px;
+      }
+
+      .service-grid,
+      .training-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
       .profile-card img {
-        height: 360px;
+        height: 330px;
       }
     }
   </style>
@@ -455,386 +528,515 @@
 
 <body>
 
-<!-- HEADER -->
+  <!-- NAVIGATION -->
 
-<header>
-  <nav class="nav">
+  <header>
+    <nav class="nav">
 
-    <a href="index.html" class="brand">
+      <a href="#home" class="brand">
+        <img src="./logo.png" alt="FOUDA ABA Logo">
+        <div class="brand-text">
+          <strong>FOUDA ABA</strong>
+          <span>Behavioral & Development Center</span>
+        </div>
+      </a>
 
-      <img src="logo.png" alt="FOUDA ABA Logo">
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About Dr. Mohamed</a>
+        <a href="#services">Services</a>
+        <a href="#training">Training</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
 
-      <div class="brand-text">
-        <h2>FOUDA ABA</h2>
-        <p>Behavioral & Development Center</p>
+        <button class="language" onclick="toggleLanguage()">
+          العربية
+        </button>
       </div>
 
-    </a>
-
-    <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Dr. Mohamed</a>
-      <a href="services.html">Services</a>
-      <a href="training.html">Training</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
-      <a href="index.html" class="language">العربية</a>
-    </div>
-
-  </nav>
-</header>
+    </nav>
+  </header>
 
 
-<!-- HERO -->
+  <!-- HERO -->
 
-<main>
+  <main>
 
-<section class="hero">
+    <section class="hero" id="home">
 
-  <div class="hero-grid">
+      <div class="hero-grid">
 
-    <div>
+        <div>
 
-      <div class="badge">
-        Evidence-Informed • Professional • Human-Centered
-      </div>
+          <div class="badge">
+            Evidence-Informed • Professional • Human-Centered
+          </div>
 
-      <h1>
-        Better Behavior.<br>
-        <span>Brighter</span><br>
-        <span>Futures.</span>
-      </h1>
+          <h1>
+            Better Behavior.
+            <span>Brighter</span>
+            <span>Futures.</span>
+          </h1>
 
-      <p class="hero-text">
-        FOUDA ABA brings together applied behavior analysis,
-        special education, psychological and educational practice,
-        professional training, consultation, and research.
-      </p>
+          <p>
+            FOUDA ABA brings together Applied Behavior Analysis,
+            special education, psychological and educational practice,
+            professional training, consultation and research.
+          </p>
 
-      <div class="buttons">
+          <div class="buttons">
 
-        <a href="services.html" class="btn btn-primary">
-          Explore Services
-        </a>
+            <a href="#services" class="btn btn-primary">
+              Explore Services
+            </a>
 
-        <a href="training.html" class="btn btn-secondary">
-          Professional Training
-        </a>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Us
+            </a>
 
-      </div>
+          </div>
 
-    </div>
-
-
-    <div class="profile-card">
-
-      <img src="./dr-mohamed-fouda.jpg" alt="Dr. Mohamed Fouda">
-
-      <h3>Dr. Mohamed Fouda</h3>
-
-      <p>
-        ABA • Autism • Special Education
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
+        </div>
 
 
-<!-- SERVICES -->
+        <div class="profile-card">
 
-<section>
+          <img
+            src="./dr-mohamed-fouda.jpg"
+            alt="Dr. Mohamed Fouda"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          >
 
-  <div class="container">
+          <div style="display:none; padding:80px 10px;">
+            <strong>Dr. Mohamed Fouda</strong>
+          </div>
 
-    <div class="section-title">
+          <h3>Dr. Mohamed Fouda</h3>
 
-      <h2>Our Areas of Practice</h2>
+          <p>
+            Behavioral & Development Specialist
+          </p>
 
-      <p>
-        Professional services and educational support
-        designed around individual needs and meaningful outcomes.
-      </p>
-
-    </div>
-
-
-    <div class="cards">
-
-      <div class="card">
-
-        <div class="icon">🧠</div>
-
-        <h3>Applied Behavior Analysis</h3>
-
-        <p>
-          Evidence-informed behavioral assessment,
-          intervention planning, skill development,
-          and behavior support.
-        </p>
+        </div>
 
       </div>
 
-
-      <div class="card">
-
-        <div class="icon">🌱</div>
-
-        <h3>Autism Support</h3>
-
-        <p>
-          Individualized approaches supporting communication,
-          social interaction, independence, learning,
-          and adaptive skills.
-        </p>
-
-      </div>
+    </section>
 
 
-      <div class="card">
+    <!-- ABOUT -->
 
-        <div class="icon">📚</div>
+    <section id="about">
 
-        <h3>Special Education</h3>
+      <div class="container">
 
-        <p>
-          Educational assessment, individualized planning,
-          learning support, and professional consultation.
-        </p>
+        <div class="section-title">
+          <h2>About Dr. Mohamed</h2>
+          <p>
+            Professional practice combining behavioral science,
+            education, psychology and developmental support.
+          </p>
+        </div>
 
-      </div>
+        <div class="about-grid">
+
+          <div class="card">
+
+            <h3>Professional Approach</h3>
+
+            <p>
+              FOUDA ABA focuses on evidence-informed and
+              individualized intervention. Services are designed
+              around the learner's strengths, needs, goals and
+              developmental priorities.
+            </p>
+
+          </div>
 
 
-      <div class="card">
+          <div class="card">
 
-        <div class="icon">🎓</div>
+            <h3>Our Vision</h3>
 
-        <h3>Professional Training</h3>
+            <p>
+              To support children, adolescents and families through
+              professional behavioral and educational services,
+              practical training and research-based practice.
+            </p>
 
-        <p>
-          Practical professional development for educators,
-          therapists, behavior practitioners, and families.
-        </p>
+          </div>
 
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">🔬</div>
-
-        <h3>Research</h3>
-
-        <p>
-          Applied research and evidence-informed practice
-          in behavior analysis, autism, and education.
-        </p>
+        </div>
 
       </div>
 
+    </section>
 
-      <div class="card">
 
-        <div class="icon">🤝</div>
+    <!-- SERVICES -->
 
-        <h3>Consultation</h3>
+    <section class="services" id="services">
 
-        <p>
-          Professional consultation for families,
-          schools, educational institutions, and
-          multidisciplinary teams.
-        </p>
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Our Services</h2>
+
+          <p>
+            Integrated professional services for behavioral,
+            developmental and educational needs.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <div class="service-card">
+
+            <div class="icon">🧠</div>
+
+            <h3>Applied Behavior Analysis</h3>
+
+            <p>
+              Individualized behavioral assessment,
+              intervention planning and skill development.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="icon">🧩</div>
+
+            <h3>Autism Support</h3>
+
+            <p>
+              Evidence-informed support targeting communication,
+              learning, adaptive behavior and independence.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="icon">📚</div>
+
+            <h3>Special Education</h3>
+
+            <p>
+              Educational assessment, individualized goals
+              and practical learning support.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="icon">💬</div>
+
+            <h3>Behavioral Consultation</h3>
+
+            <p>
+              Professional consultation for families,
+              schools and educational teams.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="icon">🎓</div>
+
+            <h3>Professional Training</h3>
+
+            <p>
+              Practical workshops and training for educators,
+              therapists and professionals.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="icon">🔬</div>
+
+            <h3>Research</h3>
+
+            <p>
+              Research-oriented practice connecting scientific
+              evidence with real-world educational services.
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
-<!-- ABOUT -->
+    <!-- TRAINING -->
 
-<section class="about">
+    <section class="training" id="training">
 
-  <div class="container">
+      <div class="container">
 
-    <div class="about-grid">
+        <div class="section-title">
 
-      <div class="about-image">
+          <h2>Training & Workshops</h2>
 
-        <img
-          src="dr-mohamed-fouda.jpg"
-          alt="Dr. Mohamed Fouda"
-        >
+          <p>
+            Practical professional development designed to connect
+            theory with real-world practice.
+          </p>
+
+        </div>
+
+
+        <div class="training-grid">
+
+          <div class="training-card">
+
+            <h3>ABA Training</h3>
+
+            <ul>
+              <li>Applied Behavior Analysis</li>
+              <li>Behavior Assessment</li>
+              <li>Intervention Planning</li>
+              <li>Data Collection</li>
+            </ul>
+
+          </div>
+
+
+          <div class="training-card">
+
+            <h3>Autism & Special Education</h3>
+
+            <ul>
+              <li>Understanding Autism</li>
+              <li>Individualized Education</li>
+              <li>Functional Skills</li>
+              <li>Classroom Strategies</li>
+            </ul>
+
+          </div>
+
+
+          <div class="training-card">
+
+            <h3>Professional Development</h3>
+
+            <ul>
+              <li>Clinical Practice</li>
+              <li>Case Management</li>
+              <li>Professional Documentation</li>
+              <li>Family Collaboration</li>
+            </ul>
+
+          </div>
+
+        </div>
 
       </div>
 
+    </section>
 
-      <div class="about-content">
 
-        <h2>About Dr. Mohamed</h2>
+    <!-- RESEARCH -->
 
-        <p>
-          Dr. Mohamed Fouda is a professional working across
-          Applied Behavior Analysis, Autism, Special Education,
-          psychological and educational practice.
-        </p>
+    <section id="research">
 
-        <p>
-          His professional interests include evidence-informed
-          intervention, behavioral assessment, skill development,
-          professional training, consultation, and applied research.
-        </p>
+      <div class="container">
 
-        <a href="about.html" class="btn btn-primary">
-          Read More
-        </a>
+        <div class="section-title">
+
+          <h2>Research</h2>
+
+          <p>
+            Promoting evidence-based practice through professional
+            research, academic collaboration and knowledge sharing.
+          </p>
+
+        </div>
+
+
+        <div class="research-grid">
+
+          <div class="research-card">
+
+            <h3>Research & Publications</h3>
+
+            <p>
+              Academic and applied research related to behavior
+              analysis, special education, autism and developmental
+              support.
+            </p>
+
+            <br>
+
+            <a href="./research.html" class="btn btn-primary">
+              View Research
+            </a>
+
+          </div>
+
+
+          <div class="research-card">
+
+            <h3>Academic Collaboration</h3>
+
+            <p>
+              Collaboration with universities, professionals,
+              educators and researchers to strengthen evidence-based
+              behavioral and educational practice.
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
-<!-- PROFESSIONAL MESSAGE -->
+    <!-- CONTACT -->
 
-<section class="highlight">
+    <section class="contact" id="contact">
 
-  <div class="container">
+      <div class="container">
 
-    <h2>Evidence. Practice. Impact.</h2>
+        <div class="section-title">
+
+          <h2>Contact</h2>
+
+          <p>
+            For consultation, professional training,
+            collaboration and further information.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+
+            <h3>Professional Consultation</h3>
+
+            <p>
+              Contact us for behavioral and educational consultation.
+            </p>
+
+          </div>
+
+
+          <div class="contact-card">
+
+            <h3>Training</h3>
+
+            <p>
+              Inquire about professional workshops and training.
+            </p>
+
+          </div>
+
+
+          <div class="contact-card">
+
+            <h3>Research</h3>
+
+            <p>
+              Academic and professional research collaboration.
+            </p>
+
+          </div>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center;">
+
+          <a href="./contact.html" class="btn btn-secondary">
+            Contact Page
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
 
     <p>
-      Our goal is to connect scientific knowledge with
-      practical professional work to support meaningful
-      development, learning, independence, and quality of life.
+      © 2026 FOUDA ABA – Behavioral & Development Center
     </p>
 
-  </div>
+    <p>
+      Dr. Mohamed Fouda
+    </p>
 
-</section>
-
-
-<!-- QUICK LINKS -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Explore FOUDA ABA</h2>
-
-      <p>
-        Discover our professional services, training,
-        research activities, and contact information.
-      </p>
-
-    </div>
+  </footer>
 
 
-    <div class="cards">
+  <!-- LANGUAGE SCRIPT -->
 
-      <a href="services.html" class="card">
+  <script>
 
-        <div class="icon">⚕️</div>
+    function toggleLanguage() {
 
-        <h3>Services</h3>
+      const body = document.body;
 
-        <p>
-          Explore our professional and educational services.
-        </p>
+      if (!body.classList.contains("rtl")) {
 
-      </a>
+        body.classList.add("rtl");
 
+        document.documentElement.lang = "ar";
 
-      <a href="training.html" class="card">
+        document.querySelector(".language").textContent = "English";
 
-        <div class="icon">🎓</div>
+        document.querySelector(".brand-text strong").textContent =
+          "فودة ABA";
 
-        <h3>Training</h3>
+        document.querySelector(".brand-text span").textContent =
+          "مركز السلوك والتطوير";
 
-        <p>
-          Professional workshops and specialized training programs.
-        </p>
+      } else {
 
-      </a>
+        body.classList.remove("rtl");
 
+        document.documentElement.lang = "en";
 
-      <a href="research.html" class="card">
+        document.querySelector(".language").textContent =
+          "العربية";
 
-        <div class="icon">🔬</div>
+        document.querySelector(".brand-text strong").textContent =
+          "FOUDA ABA";
 
-        <h3>Research</h3>
+        document.querySelector(".brand-text span").textContent =
+          "Behavioral & Development Center";
 
-        <p>
-          Explore research interests and academic activities.
-        </p>
+      }
 
-      </a>
+    }
 
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-  <div class="container">
-
-    <div class="contact-box">
-
-      <h2>Let's Connect</h2>
-
-      <p>
-        For professional consultation, training,
-        research collaboration, or further information,
-        please contact us.
-      </p>
-
-      <a href="contact.html" class="btn btn-primary">
-        Contact Us
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  <h3>FOUDA ABA</h3>
-
-  <p>
-    Behavioral & Development Center
-  </p>
-
-  <p>
-    ABA • Autism • Special Education • Professional Training • Research
-  </p>
-
-  <p style="margin-top:15px;">
-    © 2026 FOUDA ABA. All Rights Reserved.
-  </p>
-
-</footer>
+  </script>
 
 </body>
 </html>

@@ -6,11 +6,15 @@
 
   <title>FOUDA ABA | Dr. Mohamed Fouda</title>
 
-  <meta name="description" content="FOUDA ABA – Behavioral & Development Center specializing in Applied Behavior Analysis, Autism, Special Education, Professional Training and Research.">
+  <meta name="description"
+        content="FOUDA ABA – Behavioral & Development Center specializing in Applied Behavior Analysis, Autism, Special Education, Professional Training and Research.">
 
-  <link rel="icon" href="./logo.png">
+  <!-- FAVICON / LOGO -->
+  <link rel="icon"
+        href="https://drfouda.github.io/fouda-aba/logo.png">
 
   <style>
+
     :root {
       --navy: #0b376b;
       --blue: #146bbb;
@@ -52,7 +56,9 @@
       display: block;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
       position: sticky;
@@ -78,7 +84,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      min-width: 230px;
+      min-width: 250px;
     }
 
     .brand img {
@@ -104,7 +110,7 @@
     .menu {
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 23px;
       flex-wrap: wrap;
       justify-content: flex-end;
     }
@@ -130,12 +136,19 @@
       color: var(--navy);
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       background:
-        radial-gradient(circle at 80% 20%, rgba(31,168,137,0.13), transparent 28%),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(31,168,137,0.13),
+          transparent 28%
+        ),
         linear-gradient(135deg, #ffffff, #eef7fb);
+
       padding: 80px 24px;
     }
 
@@ -214,6 +227,10 @@
       box-shadow: var(--shadow);
     }
 
+    /* =========================
+       PROFILE
+    ========================= */
+
     .profile-card {
       background: white;
       border: 1px solid var(--line);
@@ -231,6 +248,7 @@
       object-position: center top;
       border-radius: 18px;
       margin: auto;
+      background: #eef3f7;
     }
 
     .profile-card h3 {
@@ -245,7 +263,9 @@
       margin-top: 5px;
     }
 
-    /* GENERAL SECTIONS */
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
 
     section {
       padding: 75px 24px;
@@ -273,7 +293,9 @@
       margin: auto;
     }
 
-    /* ABOUT */
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about-grid {
       display: grid;
@@ -299,7 +321,9 @@
       color: var(--gray);
     }
 
-    /* SERVICES */
+    /* =========================
+       SERVICES
+    ========================= */
 
     .services {
       background: white;
@@ -346,7 +370,9 @@
       font-size: 14px;
     }
 
-    /* TRAINING */
+    /* =========================
+       TRAINING
+    ========================= */
 
     .training {
       background: linear-gradient(120deg, #edf7f5, #f6f9fc);
@@ -375,7 +401,9 @@
       color: var(--gray);
     }
 
-    /* RESEARCH */
+    /* =========================
+       RESEARCH
+    ========================= */
 
     .research-grid {
       display: grid;
@@ -395,7 +423,13 @@
       margin-bottom: 12px;
     }
 
-    /* CONTACT */
+    .research-card p {
+      color: var(--gray);
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact {
       background: var(--navy);
@@ -432,7 +466,9 @@
       color: #d9e5f2;
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       background: #06294f;
@@ -446,7 +482,9 @@
       font-size: 14px;
     }
 
-    /* RTL */
+    /* =========================
+       RTL
+    ========================= */
 
     body.rtl {
       direction: rtl;
@@ -466,7 +504,9 @@
       padding-right: 20px;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 900px) {
 
@@ -523,44 +563,74 @@
         height: 330px;
       }
     }
+
   </style>
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- =========================
+       HEADER
+  ========================= -->
 
   <header>
+
     <nav class="nav">
 
       <a href="#home" class="brand">
-        <img src="./logo.png" alt="FOUDA ABA Logo">
+
+        <img
+          src="https://drfouda.github.io/fouda-aba/logo.png"
+          alt="FOUDA ABA Logo"
+        >
+
         <div class="brand-text">
+
           <strong>FOUDA ABA</strong>
-          <span>Behavioral & Development Center</span>
+
+          <span>
+            Behavioral & Development Center
+          </span>
+
         </div>
+
       </a>
 
+
       <div class="menu">
+
         <a href="#home">Home</a>
+
         <a href="#about">About Dr. Mohamed</a>
+
         <a href="#services">Services</a>
+
         <a href="#training">Training</a>
+
         <a href="#research">Research</a>
+
         <a href="#contact">Contact</a>
 
-        <button class="language" onclick="toggleLanguage()">
+        <button
+          class="language"
+          onclick="toggleLanguage()">
           العربية
         </button>
+
       </div>
 
     </nav>
+
   </header>
 
 
-  <!-- HERO -->
+  <!-- =========================
+       MAIN
+  ========================= -->
 
   <main>
+
+    <!-- HERO -->
 
     <section class="hero" id="home">
 
@@ -572,11 +642,13 @@
             Evidence-Informed • Professional • Human-Centered
           </div>
 
+
           <h1>
             Better Behavior.
             <span>Brighter</span>
             <span>Futures.</span>
           </h1>
+
 
           <p>
             FOUDA ABA brings together Applied Behavior Analysis,
@@ -584,13 +656,18 @@
             professional training, consultation and research.
           </p>
 
+
           <div class="buttons">
 
-            <a href="#services" class="btn btn-primary">
+            <a
+              href="#services"
+              class="btn btn-primary">
               Explore Services
             </a>
 
-            <a href="#contact" class="btn btn-secondary">
+            <a
+              href="#contact"
+              class="btn btn-secondary">
               Contact Us
             </a>
 
@@ -599,19 +676,18 @@
         </div>
 
 
+        <!-- PROFILE CARD -->
+
         <div class="profile-card">
 
           <img
-            src="./dr-mohamed-fouda.jpg"
+            src="https://drfouda.github.io/fouda-aba/dr-mohamed-fouda.jpg"
             alt="Dr. Mohamed Fouda"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
           >
 
-          <div style="display:none; padding:80px 10px;">
-            <strong>Dr. Mohamed Fouda</strong>
-          </div>
-
-          <h3>Dr. Mohamed Fouda</h3>
+          <h3>
+            Dr. Mohamed Fouda
+          </h3>
 
           <p>
             Behavioral & Development Specialist
@@ -631,18 +707,26 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About Dr. Mohamed</h2>
+
+          <h2>
+            About Dr. Mohamed
+          </h2>
+
           <p>
             Professional practice combining behavioral science,
             education, psychology and developmental support.
           </p>
+
         </div>
+
 
         <div class="about-grid">
 
           <div class="card">
 
-            <h3>Professional Approach</h3>
+            <h3>
+              Professional Approach
+            </h3>
 
             <p>
               FOUDA ABA focuses on evidence-informed and
@@ -656,7 +740,9 @@
 
           <div class="card">
 
-            <h3>Our Vision</h3>
+            <h3>
+              Our Vision
+            </h3>
 
             <p>
               To support children, adolescents and families through
@@ -675,13 +761,17 @@
 
     <!-- SERVICES -->
 
-    <section class="services" id="services">
+    <section
+      class="services"
+      id="services">
 
       <div class="container">
 
         <div class="section-title">
 
-          <h2>Our Services</h2>
+          <h2>
+            Our Services
+          </h2>
 
           <p>
             Integrated professional services for behavioral,
@@ -695,9 +785,13 @@
 
           <div class="service-card">
 
-            <div class="icon">🧠</div>
+            <div class="icon">
+              🧠
+            </div>
 
-            <h3>Applied Behavior Analysis</h3>
+            <h3>
+              Applied Behavior Analysis
+            </h3>
 
             <p>
               Individualized behavioral assessment,
@@ -709,9 +803,13 @@
 
           <div class="service-card">
 
-            <div class="icon">🧩</div>
+            <div class="icon">
+              🧩
+            </div>
 
-            <h3>Autism Support</h3>
+            <h3>
+              Autism Support
+            </h3>
 
             <p>
               Evidence-informed support targeting communication,
@@ -723,9 +821,13 @@
 
           <div class="service-card">
 
-            <div class="icon">📚</div>
+            <div class="icon">
+              📚
+            </div>
 
-            <h3>Special Education</h3>
+            <h3>
+              Special Education
+            </h3>
 
             <p>
               Educational assessment, individualized goals
@@ -737,9 +839,13 @@
 
           <div class="service-card">
 
-            <div class="icon">💬</div>
+            <div class="icon">
+              💬
+            </div>
 
-            <h3>Behavioral Consultation</h3>
+            <h3>
+              Behavioral Consultation
+            </h3>
 
             <p>
               Professional consultation for families,
@@ -751,9 +857,13 @@
 
           <div class="service-card">
 
-            <div class="icon">🎓</div>
+            <div class="icon">
+              🎓
+            </div>
 
-            <h3>Professional Training</h3>
+            <h3>
+              Professional Training
+            </h3>
 
             <p>
               Practical workshops and training for educators,
@@ -765,9 +875,13 @@
 
           <div class="service-card">
 
-            <div class="icon">🔬</div>
+            <div class="icon">
+              🔬
+            </div>
 
-            <h3>Research</h3>
+            <h3>
+              Research
+            </h3>
 
             <p>
               Research-oriented practice connecting scientific
@@ -785,13 +899,17 @@
 
     <!-- TRAINING -->
 
-    <section class="training" id="training">
+    <section
+      class="training"
+      id="training">
 
       <div class="container">
 
         <div class="section-title">
 
-          <h2>Training & Workshops</h2>
+          <h2>
+            Training & Workshops
+          </h2>
 
           <p>
             Practical professional development designed to connect
@@ -805,13 +923,28 @@
 
           <div class="training-card">
 
-            <h3>ABA Training</h3>
+            <h3>
+              ABA Training
+            </h3>
 
             <ul>
-              <li>Applied Behavior Analysis</li>
-              <li>Behavior Assessment</li>
-              <li>Intervention Planning</li>
-              <li>Data Collection</li>
+
+              <li>
+                Applied Behavior Analysis
+              </li>
+
+              <li>
+                Behavior Assessment
+              </li>
+
+              <li>
+                Intervention Planning
+              </li>
+
+              <li>
+                Data Collection
+              </li>
+
             </ul>
 
           </div>
@@ -819,13 +952,28 @@
 
           <div class="training-card">
 
-            <h3>Autism & Special Education</h3>
+            <h3>
+              Autism & Special Education
+            </h3>
 
             <ul>
-              <li>Understanding Autism</li>
-              <li>Individualized Education</li>
-              <li>Functional Skills</li>
-              <li>Classroom Strategies</li>
+
+              <li>
+                Understanding Autism
+              </li>
+
+              <li>
+                Individualized Education
+              </li>
+
+              <li>
+                Functional Skills
+              </li>
+
+              <li>
+                Classroom Strategies
+              </li>
+
             </ul>
 
           </div>
@@ -833,13 +981,28 @@
 
           <div class="training-card">
 
-            <h3>Professional Development</h3>
+            <h3>
+              Professional Development
+            </h3>
 
             <ul>
-              <li>Clinical Practice</li>
-              <li>Case Management</li>
-              <li>Professional Documentation</li>
-              <li>Family Collaboration</li>
+
+              <li>
+                Clinical Practice
+              </li>
+
+              <li>
+                Case Management
+              </li>
+
+              <li>
+                Professional Documentation
+              </li>
+
+              <li>
+                Family Collaboration
+              </li>
+
             </ul>
 
           </div>
@@ -859,7 +1022,9 @@
 
         <div class="section-title">
 
-          <h2>Research</h2>
+          <h2>
+            Research
+          </h2>
 
           <p>
             Promoting evidence-based practice through professional
@@ -873,7 +1038,9 @@
 
           <div class="research-card">
 
-            <h3>Research & Publications</h3>
+            <h3>
+              Research & Publications
+            </h3>
 
             <p>
               Academic and applied research related to behavior
@@ -883,7 +1050,9 @@
 
             <br>
 
-            <a href="./research.html" class="btn btn-primary">
+            <a
+              href="./research.html"
+              class="btn btn-primary">
               View Research
             </a>
 
@@ -892,7 +1061,9 @@
 
           <div class="research-card">
 
-            <h3>Academic Collaboration</h3>
+            <h3>
+              Academic Collaboration
+            </h3>
 
             <p>
               Collaboration with universities, professionals,
@@ -911,13 +1082,17 @@
 
     <!-- CONTACT -->
 
-    <section class="contact" id="contact">
+    <section
+      class="contact"
+      id="contact">
 
       <div class="container">
 
         <div class="section-title">
 
-          <h2>Contact</h2>
+          <h2>
+            Contact
+          </h2>
 
           <p>
             For consultation, professional training,
@@ -931,7 +1106,9 @@
 
           <div class="contact-card">
 
-            <h3>Professional Consultation</h3>
+            <h3>
+              Professional Consultation
+            </h3>
 
             <p>
               Contact us for behavioral and educational consultation.
@@ -942,7 +1119,9 @@
 
           <div class="contact-card">
 
-            <h3>Training</h3>
+            <h3>
+              Training
+            </h3>
 
             <p>
               Inquire about professional workshops and training.
@@ -953,7 +1132,9 @@
 
           <div class="contact-card">
 
-            <h3>Research</h3>
+            <h3>
+              Research
+            </h3>
 
             <p>
               Academic and professional research collaboration.
@@ -963,11 +1144,15 @@
 
         </div>
 
+
         <br>
+
 
         <div style="text-align:center;">
 
-          <a href="./contact.html" class="btn btn-secondary">
+          <a
+            href="./contact.html"
+            class="btn btn-secondary">
             Contact Page
           </a>
 
@@ -980,7 +1165,9 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
   <footer>
 
@@ -995,13 +1182,16 @@
   </footer>
 
 
-  <!-- LANGUAGE SCRIPT -->
+  <!-- =========================
+       LANGUAGE
+  ========================= -->
 
   <script>
 
     function toggleLanguage() {
 
       const body = document.body;
+      const button = document.querySelector(".language");
 
       if (!body.classList.contains("rtl")) {
 
@@ -1009,7 +1199,7 @@
 
         document.documentElement.lang = "ar";
 
-        document.querySelector(".language").textContent = "English";
+        button.textContent = "English";
 
         document.querySelector(".brand-text strong").textContent =
           "فودة ABA";
@@ -1023,8 +1213,7 @@
 
         document.documentElement.lang = "en";
 
-        document.querySelector(".language").textContent =
-          "العربية";
+        button.textContent = "العربية";
 
         document.querySelector(".brand-text strong").textContent =
           "FOUDA ABA";

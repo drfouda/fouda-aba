@@ -1,577 +1,1276 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="FOUDA ABA – Behavioral & Development Center specializing in Applied Behavior Analysis, Autism, Special Education, Professional Training, Consultation and Research.">
+
+  <meta name="keywords"
+        content="FOUDA ABA, Dr Mohamed Fouda, ABA, Applied Behavior Analysis, Autism, Special Education, Behavioral Consultation, Training, Research">
+
+  <meta name="author"
+        content="Dr. Mohamed Fouda">
 
   <title>FOUDA ABA | Dr. Mohamed Fouda</title>
 
-  <meta name="description"
-        content="FOUDA ABA – Behavioral & Development Center specializing in Applied Behavior Analysis, Autism, Special Education, Professional Training and Research.">
 
-  <!-- FAVICON / LOGO -->
+  <!-- =========================
+       FAVICON
+  ========================== -->
+
   <link rel="icon"
-        href="./logo.png">
+        type="image/png"
+        href="https://raw.githubusercontent.com/drfouda/fouda-aba/main/logo.png">
+
+
+  <!-- =========================
+       STYLE
+  ========================== -->
 
   <style>
 
     :root {
+
       --navy: #0b376b;
       --blue: #146bbb;
       --teal: #1fa889;
       --green: #2f9d73;
+
       --light: #f5f8fb;
       --white: #ffffff;
+
       --dark: #172033;
       --gray: #5d6878;
+
       --line: #e2e8f0;
-      --shadow: 0 10px 30px rgba(11,55,107,0.10);
+
+      --shadow:
+        0 10px 30px rgba(11,55,107,0.10);
+
       --radius: 18px;
+
     }
+
 
     * {
+
       box-sizing: border-box;
+
       margin: 0;
+
       padding: 0;
+
     }
+
 
     html {
+
       scroll-behavior: smooth;
+
     }
+
 
     body {
-      font-family: Arial, "Segoe UI", sans-serif;
+
+      font-family:
+        Arial,
+        "Segoe UI",
+        Tahoma,
+        sans-serif;
+
       background: var(--light);
+
       color: var(--dark);
+
       line-height: 1.7;
+
     }
+
 
     a {
+
       text-decoration: none;
+
       color: inherit;
+
     }
 
+
     img {
+
       max-width: 100%;
+
       display: block;
+
     }
+
 
     /* =========================
        HEADER
-    ========================= */
+    ========================== */
 
     header {
+
       position: sticky;
+
       top: 0;
+
       z-index: 1000;
-      background: rgba(255,255,255,0.97);
-      border-bottom: 1px solid var(--line);
-      box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+
+      background:
+        rgba(255,255,255,0.98);
+
+      border-bottom:
+        1px solid var(--line);
+
+      box-shadow:
+        0 2px 15px rgba(0,0,0,0.04);
+
+      backdrop-filter: blur(10px);
+
     }
+
 
     .nav {
+
       max-width: 1200px;
+
       margin: auto;
-      min-height: 78px;
+
+      min-height: 82px;
+
       padding: 12px 24px;
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       gap: 25px;
+
     }
+
 
     .brand {
+
       display: flex;
+
       align-items: center;
+
       gap: 12px;
-      min-width: 250px;
+
+      min-width: 270px;
+
     }
 
-    .brand img {
-      width: 52px;
-      height: 52px;
+
+    .brand-logo {
+
+      width: 58px;
+
+      height: 58px;
+
       object-fit: contain;
-      border-radius: 10px;
+
+      border-radius: 12px;
+
+      background: white;
+
+      border: 1px solid var(--line);
+
+      padding: 4px;
+
     }
+
 
     .brand-text strong {
+
       display: block;
+
       color: var(--navy);
-      font-size: 20px;
+
+      font-size: 21px;
+
+      font-weight: 800;
+
+      line-height: 1.2;
+
     }
+
 
     .brand-text span {
+
       display: block;
+
       color: var(--teal);
+
       font-size: 12px;
-      font-weight: bold;
+
+      font-weight: 700;
+
+      margin-top: 3px;
+
     }
+
 
     .menu {
+
       display: flex;
+
       align-items: center;
-      gap: 23px;
+
+      gap: 21px;
+
       flex-wrap: wrap;
+
       justify-content: flex-end;
+
     }
+
 
     .menu a {
+
       color: var(--dark);
+
       font-weight: 600;
+
       font-size: 15px;
-      transition: 0.2s;
+
+      transition: 0.25s;
+
     }
+
 
     .menu a:hover {
+
       color: var(--blue);
+
     }
 
+
     .language {
-      border: 1px solid var(--line);
-      background: white;
-      padding: 8px 14px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-weight: bold;
-      color: var(--navy);
+
+      border:
+        1px solid #cbd8e5;
+
+      background:
+        white;
+
+      padding:
+        9px 16px;
+
+      border-radius:
+        22px;
+
+      cursor:
+        pointer;
+
+      font-weight:
+        700;
+
+      color:
+        var(--navy);
+
+      transition:
+        0.25s;
+
+      font-family:
+        inherit;
+
     }
+
+
+    .language:hover {
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+    }
+
 
     /* =========================
        HERO
-    ========================= */
+    ========================== */
 
     .hero {
+
       background:
+
         radial-gradient(
           circle at 80% 20%,
-          rgba(31,168,137,0.13),
+          rgba(31,168,137,0.14),
           transparent 28%
         ),
-        linear-gradient(135deg, #ffffff, #eef7fb);
 
-      padding: 80px 24px;
+        linear-gradient(
+          135deg,
+          #ffffff,
+          #eef7fb
+        );
+
+      padding:
+        85px 24px 90px;
+
     }
+
 
     .hero-grid {
+
       max-width: 1200px;
+
       margin: auto;
+
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 60px;
+
+      grid-template-columns:
+        1.08fr 0.92fr;
+
+      gap: 70px;
+
       align-items: center;
+
     }
+
 
     .badge {
+
       display: inline-block;
-      background: #e8f3f7;
-      color: var(--navy);
-      padding: 8px 16px;
-      border-radius: 30px;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 20px;
+
+      background:
+        #e8f3f7;
+
+      color:
+        var(--navy);
+
+      padding:
+        9px 17px;
+
+      border-radius:
+        30px;
+
+      font-size:
+        13px;
+
+      font-weight:
+        700;
+
+      margin-bottom:
+        22px;
+
     }
+
 
     .hero h1 {
-      font-size: clamp(46px, 7vw, 78px);
-      line-height: 1.02;
-      color: var(--navy);
-      margin-bottom: 22px;
-      letter-spacing: -2px;
+
+      font-size:
+        clamp(48px, 7vw, 82px);
+
+      line-height:
+        1.02;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        25px;
+
+      letter-spacing:
+        -2.5px;
+
     }
+
 
     .hero h1 span {
-      color: var(--teal);
-      display: block;
+
+      color:
+        var(--teal);
+
+      display:
+        block;
+
     }
+
 
     .hero p {
-      color: var(--gray);
-      font-size: 18px;
-      max-width: 700px;
-      margin-bottom: 30px;
+
+      color:
+        var(--gray);
+
+      font-size:
+        18px;
+
+      max-width:
+        680px;
+
+      margin-bottom:
+        30px;
+
     }
+
 
     .buttons {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
+
+      display:
+        flex;
+
+      gap:
+        14px;
+
+      flex-wrap:
+        wrap;
+
     }
+
 
     .btn {
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.2s;
+
+      display:
+        inline-block;
+
+      padding:
+        13px 24px;
+
+      border-radius:
+        10px;
+
+      font-weight:
+        700;
+
+      transition:
+        0.25s;
+
     }
+
 
     .btn-primary {
-      background: var(--navy);
-      color: white;
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
     }
+
 
     .btn-primary:hover {
-      background: var(--blue);
-      transform: translateY(-2px);
+
+      background:
+        var(--blue);
+
+      transform:
+        translateY(-2px);
+
     }
+
 
     .btn-secondary {
-      background: white;
-      color: var(--navy);
-      border: 1px solid #cbd8e5;
+
+      background:
+        white;
+
+      color:
+        var(--navy);
+
+      border:
+        1px solid #cbd8e5;
+
     }
+
 
     .btn-secondary:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        var(--shadow);
+
     }
+
 
     /* =========================
-       PROFILE
-    ========================= */
+       PROFILE CARD
+    ========================== */
 
     .profile-card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 25px;
-      box-shadow: var(--shadow);
-      text-align: center;
+
+      background:
+        white;
+
+      border:
+        1px solid var(--line);
+
+      border-radius:
+        24px;
+
+      padding:
+        25px;
+
+      box-shadow:
+        var(--shadow);
+
+      text-align:
+        center;
+
     }
+
 
     .profile-card img {
-      width: 100%;
-      max-width: 330px;
-      height: 390px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 18px;
-      margin: auto;
-      background: #eef3f7;
+
+      width:
+        100%;
+
+      max-width:
+        360px;
+
+      height:
+        420px;
+
+      object-fit:
+        cover;
+
+      object-position:
+        center top;
+
+      border-radius:
+        18px;
+
+      margin:
+        auto;
+
+      background:
+        #eef3f7;
+
+      border:
+        1px solid var(--line);
+
     }
+
 
     .profile-card h3 {
-      margin-top: 18px;
-      color: var(--navy);
-      font-size: 22px;
+
+      margin-top:
+        18px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        23px;
+
     }
 
+
     .profile-card p {
-      color: var(--gray);
-      font-size: 14px;
-      margin-top: 5px;
+
+      color:
+        var(--gray);
+
+      font-size:
+        14px;
+
+      margin-top:
+        5px;
+
     }
+
 
     /* =========================
        GENERAL SECTIONS
-    ========================= */
+    ========================== */
 
     section {
-      padding: 75px 24px;
+
+      padding:
+        80px 24px;
+
     }
+
 
     .container {
-      max-width: 1200px;
-      margin: auto;
+
+      max-width:
+        1200px;
+
+      margin:
+        auto;
+
     }
+
 
     .section-title {
-      text-align: center;
-      margin-bottom: 45px;
+
+      text-align:
+        center;
+
+      margin-bottom:
+        48px;
+
     }
+
 
     .section-title h2 {
-      font-size: 38px;
-      color: var(--navy);
-      margin-bottom: 10px;
+
+      font-size:
+        40px;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        10px;
+
     }
 
+
     .section-title p {
-      color: var(--gray);
-      max-width: 720px;
-      margin: auto;
+
+      color:
+        var(--gray);
+
+      max-width:
+        720px;
+
+      margin:
+        auto;
+
     }
+
 
     /* =========================
        ABOUT
-    ========================= */
+    ========================== */
 
     .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        30px;
+
     }
+
 
     .card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 30px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+
+      background:
+        white;
+
+      border:
+        1px solid var(--line);
+
+      border-radius:
+        var(--radius);
+
+      padding:
+        32px;
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.04);
+
     }
+
 
     .card h3 {
-      color: var(--navy);
-      margin-bottom: 12px;
-      font-size: 22px;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        12px;
+
+      font-size:
+        23px;
+
     }
 
+
     .card p {
-      color: var(--gray);
+
+      color:
+        var(--gray);
+
     }
+
 
     /* =========================
        SERVICES
-    ========================= */
+    ========================== */
 
     .services {
-      background: white;
+
+      background:
+        white;
+
     }
+
 
     .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        22px;
+
     }
+
 
     .service-card {
-      background: var(--light);
-      border: 1px solid var(--line);
-      padding: 28px;
-      border-radius: var(--radius);
-      transition: 0.25s;
+
+      background:
+        var(--light);
+
+      border:
+        1px solid var(--line);
+
+      padding:
+        30px;
+
+      border-radius:
+        var(--radius);
+
+      transition:
+        0.25s;
+
     }
+
 
     .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow);
+
+      transform:
+        translateY(-6px);
+
+      box-shadow:
+        var(--shadow);
+
     }
+
 
     .icon {
-      width: 52px;
-      height: 52px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: #e7f4f0;
-      color: var(--teal);
-      font-size: 25px;
-      margin-bottom: 18px;
+
+      width:
+        54px;
+
+      height:
+        54px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      border-radius:
+        14px;
+
+      background:
+        #e7f4f0;
+
+      color:
+        var(--teal);
+
+      font-size:
+        26px;
+
+      margin-bottom:
+        18px;
+
     }
+
 
     .service-card h3 {
-      color: var(--navy);
-      margin-bottom: 9px;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        9px;
+
+      font-size:
+        19px;
+
     }
 
+
     .service-card p {
-      color: var(--gray);
-      font-size: 14px;
+
+      color:
+        var(--gray);
+
+      font-size:
+        14px;
+
     }
+
 
     /* =========================
        TRAINING
-    ========================= */
+    ========================== */
 
     .training {
-      background: linear-gradient(120deg, #edf7f5, #f6f9fc);
+
+      background:
+        linear-gradient(
+          120deg,
+          #edf7f5,
+          #f6f9fc
+        );
+
     }
+
 
     .training-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        22px;
+
     }
+
 
     .training-card {
-      background: white;
-      padding: 28px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
+
+      background:
+        white;
+
+      padding:
+        30px;
+
+      border-radius:
+        var(--radius);
+
+      border:
+        1px solid var(--line);
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.03);
+
     }
+
 
     .training-card h3 {
-      color: var(--navy);
-      margin-bottom: 12px;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        14px;
+
     }
 
+
     .training-card ul {
-      padding-left: 20px;
-      color: var(--gray);
+
+      padding-left:
+        20px;
+
+      color:
+        var(--gray);
+
     }
+
+
+    .training-card li {
+
+      margin-bottom:
+        7px;
+
+    }
+
 
     /* =========================
        RESEARCH
-    ========================= */
+    ========================== */
 
     .research-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        30px;
+
     }
+
 
     .research-card {
-      background: white;
-      border-radius: var(--radius);
-      padding: 30px;
-      border: 1px solid var(--line);
+
+      background:
+        white;
+
+      border-radius:
+        var(--radius);
+
+      padding:
+        32px;
+
+      border:
+        1px solid var(--line);
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.04);
+
     }
+
 
     .research-card h3 {
-      color: var(--navy);
-      margin-bottom: 12px;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        12px;
+
     }
 
+
     .research-card p {
-      color: var(--gray);
+
+      color:
+        var(--gray);
+
     }
+
 
     /* =========================
        CONTACT
-    ========================= */
+    ========================== */
 
     .contact {
-      background: var(--navy);
-      color: white;
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
     }
+
 
     .contact .section-title h2 {
-      color: white;
+
+      color:
+        white;
+
     }
+
 
     .contact .section-title p {
-      color: #d9e5f2;
+
+      color:
+        #d9e5f2;
+
     }
+
 
     .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        22px;
+
     }
+
 
     .contact-card {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: var(--radius);
-      padding: 25px;
-      text-align: center;
+
+      background:
+        rgba(255,255,255,0.08);
+
+      border:
+        1px solid rgba(255,255,255,0.15);
+
+      border-radius:
+        var(--radius);
+
+      padding:
+        28px;
+
+      text-align:
+        center;
+
     }
+
 
     .contact-card h3 {
-      margin-bottom: 8px;
+
+      margin-bottom:
+        8px;
+
     }
 
+
     .contact-card p {
-      color: #d9e5f2;
+
+      color:
+        #d9e5f2;
+
     }
+
 
     /* =========================
        FOOTER
-    ========================= */
+    ========================== */
 
     footer {
-      background: #06294f;
-      color: white;
-      padding: 30px 24px;
-      text-align: center;
+
+      background:
+        #06294f;
+
+      color:
+        white;
+
+      padding:
+        32px 24px;
+
+      text-align:
+        center;
+
     }
 
+
     footer p {
-      color: #cbd8e5;
-      font-size: 14px;
+
+      color:
+        #cbd8e5;
+
+      font-size:
+        14px;
+
+      margin:
+        4px 0;
+
     }
+
 
     /* =========================
        RTL
-    ========================= */
+    ========================== */
 
     body.rtl {
-      direction: rtl;
-      text-align: right;
+
+      direction:
+        rtl;
+
+      text-align:
+        right;
+
     }
+
 
     body.rtl .menu {
-      direction: rtl;
+
+      direction:
+        rtl;
+
     }
+
 
     body.rtl .hero h1 {
-      letter-spacing: 0;
+
+      letter-spacing:
+        0;
+
     }
 
+
     body.rtl .training-card ul {
-      padding-left: 0;
-      padding-right: 20px;
+
+      padding-left:
+        0;
+
+      padding-right:
+        20px;
+
     }
+
+
+    body.rtl .buttons {
+
+      justify-content:
+        flex-start;
+
+    }
+
 
     /* =========================
        MOBILE
-    ========================= */
+    ========================== */
 
     @media (max-width: 900px) {
 
       .nav {
-        flex-direction: column;
+
+        flex-direction:
+          column;
+
+        padding:
+          15px 20px;
+
       }
 
-      .menu {
-        justify-content: center;
+
+      .brand {
+
+        justify-content:
+          center;
+
       }
+
+
+      .menu {
+
+        justify-content:
+          center;
+
+        gap:
+          15px;
+
+      }
+
 
       .hero-grid,
       .about-grid,
       .research-grid {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
+
 
       .service-grid,
       .training-grid,
       .contact-grid {
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-columns:
+          1fr 1fr;
+
       }
 
+
       .hero {
-        padding: 55px 20px;
+
+        padding:
+          60px 20px;
+
       }
+
     }
+
 
     @media (max-width: 600px) {
 
       section {
-        padding: 55px 18px;
+
+        padding:
+          60px 18px;
+
       }
+
 
       .menu {
-        gap: 12px;
+
+        gap:
+          10px;
+
       }
 
+
       .menu a {
-        font-size: 13px;
+
+        font-size:
+          13px;
+
       }
+
 
       .service-grid,
       .training-grid,
       .contact-grid {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
+
 
       .hero h1 {
-        font-size: 48px;
+
+        font-size:
+          48px;
+
       }
 
-      .profile-card img {
-        height: 330px;
+
+      .hero p {
+
+        font-size:
+          16px;
+
       }
+
+
+      .profile-card img {
+
+        height:
+          350px;
+
+      }
+
+
+      .section-title h2 {
+
+        font-size:
+          32px;
+
+      }
+
     }
 
   </style>
+
 </head>
+
 
 <body>
 
+
   <!-- =========================
        HEADER
-  ========================= -->
+  ========================== -->
 
   <header>
 
@@ -580,8 +1279,10 @@
       <a href="#home" class="brand">
 
         <img
-          src="https://drfouda.github.io/fouda-aba/logo.png"
+          class="brand-logo"
+          src="https://raw.githubusercontent.com/drfouda/fouda-aba/main/logo.png"
           alt="FOUDA ABA Logo"
+          onerror="this.style.display='none';"
         >
 
         <div class="brand-text">
@@ -599,17 +1300,39 @@
 
       <div class="menu">
 
-        <a href="#home">Home</a>
+        <a href="#home" data-en="Home" data-ar="الرئيسية">
+          Home
+        </a>
 
-        <a href="#about">About Dr. Mohamed</a>
+        <a href="#about"
+           data-en="About Dr. Mohamed"
+           data-ar="عن د. محمد">
+          About Dr. Mohamed
+        </a>
 
-        <a href="#services">Services</a>
+        <a href="#services"
+           data-en="Services"
+           data-ar="الخدمات">
+          Services
+        </a>
 
-        <a href="#training">Training</a>
+        <a href="#training"
+           data-en="Training"
+           data-ar="التدريب">
+          Training
+        </a>
 
-        <a href="#research">Research</a>
+        <a href="#research"
+           data-en="Research"
+           data-ar="البحث العلمي">
+          Research
+        </a>
 
-        <a href="#contact">Contact</a>
+        <a href="#contact"
+           data-en="Contact"
+           data-ar="تواصل معنا">
+          Contact
+        </a>
 
         <button
           class="language"
@@ -626,34 +1349,65 @@
 
   <!-- =========================
        MAIN
-  ========================= -->
+  ========================== -->
 
   <main>
 
-    <!-- HERO -->
 
-    <section class="hero" id="home">
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section
+      class="hero"
+      id="home">
 
       <div class="hero-grid">
 
+
         <div>
 
-          <div class="badge">
+          <div
+            class="badge"
+            data-en="Evidence-Informed • Professional • Human-Centered"
+            data-ar="ممارسات قائمة على الدليل • مهنية • تتمحور حول الإنسان">
+
             Evidence-Informed • Professional • Human-Centered
+
           </div>
 
 
           <h1>
-            Better Behavior.
-            <span>Brighter</span>
-            <span>Futures.</span>
+
+            <span style="color:var(--navy);"
+                  data-en="Better Behavior."
+                  data-ar="سلوك أفضل.">
+              Better Behavior.
+            </span>
+
+            <span
+              data-en="Brighter"
+              data-ar="مستقبل">
+              Brighter
+            </span>
+
+            <span
+              data-en="Futures."
+              data-ar="أكثر إشراقًا.">
+              Futures.
+            </span>
+
           </h1>
 
 
-          <p>
+          <p
+            data-en="FOUDA ABA brings together Applied Behavior Analysis, special education, psychological and educational practice, professional training, consultation and research."
+            data-ar="يجمع FOUDA ABA بين تحليل السلوك التطبيقي، والتربية الخاصة، والممارسات النفسية والتعليمية، والتدريب المهني، والاستشارات والبحث العلمي.">
+
             FOUDA ABA brings together Applied Behavior Analysis,
             special education, psychological and educational practice,
             professional training, consultation and research.
+
           </p>
 
 
@@ -661,14 +1415,23 @@
 
             <a
               href="#services"
-              class="btn btn-primary">
+              class="btn btn-primary"
+              data-en="Explore Services"
+              data-ar="استكشف خدماتنا">
+
               Explore Services
+
             </a>
+
 
             <a
               href="#contact"
-              class="btn btn-secondary">
+              class="btn btn-secondary"
+              data-en="Contact Us"
+              data-ar="تواصل معنا">
+
               Contact Us
+
             </a>
 
           </div>
@@ -676,21 +1439,35 @@
         </div>
 
 
-        <!-- PROFILE CARD -->
+        <!-- =========================
+             PROFILE
+        ========================== -->
 
         <div class="profile-card">
 
+
           <img
-            src="./dr-mohamed-fouda.jpg"
+            src="https://raw.githubusercontent.com/drfouda/fouda-aba/main/dr-mohamed-fouda.jpg"
             alt="Dr. Mohamed Fouda"
+            onerror="this.onerror=null; this.src='./dr-mohamed-fouda.jpg';"
           >
 
-          <h3>
+
+          <h3
+            data-en="Dr. Mohamed Fouda"
+            data-ar="د. محمد فودة">
+
             Dr. Mohamed Fouda
+
           </h3>
 
-          <p>
+
+          <p
+            data-en="Behavioral & Development Specialist"
+            data-ar="أخصائي السلوك والتطوير">
+
             Behavioral & Development Specialist
+
           </p>
 
         </div>
@@ -700,21 +1477,33 @@
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section id="about">
 
       <div class="container">
 
+
         <div class="section-title">
 
-          <h2>
+          <h2
+            data-en="About Dr. Mohamed"
+            data-ar="عن د. محمد">
+
             About Dr. Mohamed
+
           </h2>
 
-          <p>
+
+          <p
+            data-en="Professional practice combining behavioral science, education, psychology and developmental support."
+            data-ar="ممارسة مهنية تجمع بين علم السلوك، والتعليم، وعلم النفس، والدعم النمائي.">
+
             Professional practice combining behavioral science,
             education, psychology and developmental support.
+
           </p>
 
         </div>
@@ -722,17 +1511,27 @@
 
         <div class="about-grid">
 
+
           <div class="card">
 
-            <h3>
+            <h3
+              data-en="Professional Approach"
+              data-ar="المنهج المهني">
+
               Professional Approach
+
             </h3>
 
-            <p>
+
+            <p
+              data-en="FOUDA ABA focuses on evidence-informed and individualized intervention. Services are designed around the learner's strengths, needs, goals and developmental priorities."
+              data-ar="يركز FOUDA ABA على التدخلات الفردية القائمة على الأدلة والمعلومات العلمية، بحيث يتم تصميم الخدمات وفقًا لنقاط القوة والاحتياجات والأهداف والأولويات النمائية لكل مستفيد.">
+
               FOUDA ABA focuses on evidence-informed and
               individualized intervention. Services are designed
               around the learner's strengths, needs, goals and
               developmental priorities.
+
             </p>
 
           </div>
@@ -740,17 +1539,27 @@
 
           <div class="card">
 
-            <h3>
+            <h3
+              data-en="Our Vision"
+              data-ar="رؤيتنا">
+
               Our Vision
+
             </h3>
 
-            <p>
-              To support children, adolescents and families through
-              professional behavioral and educational services,
-              practical training and research-based practice.
+
+            <p
+              data-en="To support children, adolescents and families through professional behavioral and educational services, practical training and research-based practice."
+              data-ar="دعم الأطفال والمراهقين والأسر من خلال خدمات سلوكية وتعليمية مهنية، وتدريب عملي، وممارسات تستند إلى البحث العلمي.">
+
+              To support children, adolescents and families
+              through professional behavioral and educational
+              services, practical training and research-based practice.
+
             </p>
 
           </div>
+
 
         </div>
 
@@ -759,7 +1568,9 @@
     </section>
 
 
-    <!-- SERVICES -->
+    <!-- =========================
+         SERVICES
+    ========================== -->
 
     <section
       class="services"
@@ -767,15 +1578,25 @@
 
       <div class="container">
 
+
         <div class="section-title">
 
-          <h2>
+          <h2
+            data-en="Our Services"
+            data-ar="خدماتنا">
+
             Our Services
+
           </h2>
 
-          <p>
+
+          <p
+            data-en="Integrated professional services for behavioral, developmental and educational needs."
+            data-ar="خدمات مهنية متكاملة للاحتياجات السلوكية والنمائية والتعليمية.">
+
             Integrated professional services for behavioral,
             developmental and educational needs.
+
           </p>
 
         </div>
@@ -783,19 +1604,28 @@
 
         <div class="service-grid">
 
+
           <div class="service-card">
 
             <div class="icon">
               🧠
             </div>
 
-            <h3>
+            <h3
+              data-en="Applied Behavior Analysis"
+              data-ar="تحليل السلوك التطبيقي">
+
               Applied Behavior Analysis
+
             </h3>
 
-            <p>
+            <p
+              data-en="Individualized behavioral assessment, intervention planning and skill development."
+              data-ar="التقييم السلوكي الفردي، وتخطيط التدخل، وتنمية المهارات.">
+
               Individualized behavioral assessment,
               intervention planning and skill development.
+
             </p>
 
           </div>
@@ -807,13 +1637,21 @@
               🧩
             </div>
 
-            <h3>
+            <h3
+              data-en="Autism Support"
+              data-ar="دعم اضطراب طيف التوحد">
+
               Autism Support
+
             </h3>
 
-            <p>
+            <p
+              data-en="Evidence-informed support targeting communication, learning, adaptive behavior and independence."
+              data-ar="دعم قائم على الأدلة يستهدف التواصل والتعلم والسلوك التكيفي والاستقلالية.">
+
               Evidence-informed support targeting communication,
               learning, adaptive behavior and independence.
+
             </p>
 
           </div>
@@ -825,13 +1663,21 @@
               📚
             </div>
 
-            <h3>
+            <h3
+              data-en="Special Education"
+              data-ar="التربية الخاصة">
+
               Special Education
+
             </h3>
 
-            <p>
+            <p
+              data-en="Educational assessment, individualized goals and practical learning support."
+              data-ar="التقييم التعليمي، ووضع الأهداف الفردية، والدعم التعليمي العملي.">
+
               Educational assessment, individualized goals
               and practical learning support.
+
             </p>
 
           </div>
@@ -843,13 +1689,21 @@
               💬
             </div>
 
-            <h3>
+            <h3
+              data-en="Behavioral Consultation"
+              data-ar="الاستشارات السلوكية">
+
               Behavioral Consultation
+
             </h3>
 
-            <p>
+            <p
+              data-en="Professional consultation for families, schools and educational teams."
+              data-ar="استشارات مهنية للأسر والمدارس والفرق التعليمية.">
+
               Professional consultation for families,
               schools and educational teams.
+
             </p>
 
           </div>
@@ -861,13 +1715,21 @@
               🎓
             </div>
 
-            <h3>
+            <h3
+              data-en="Professional Training"
+              data-ar="التدريب المهني">
+
               Professional Training
+
             </h3>
 
-            <p>
+            <p
+              data-en="Practical workshops and training for educators, therapists and professionals."
+              data-ar="ورش عمل وبرامج تدريبية عملية للمعلمين والمعالجين والمتخصصين.">
+
               Practical workshops and training for educators,
               therapists and professionals.
+
             </p>
 
           </div>
@@ -879,16 +1741,25 @@
               🔬
             </div>
 
-            <h3>
+            <h3
+              data-en="Research"
+              data-ar="البحث العلمي">
+
               Research
+
             </h3>
 
-            <p>
+            <p
+              data-en="Research-oriented practice connecting scientific evidence with real-world educational services."
+              data-ar="ممارسة بحثية تربط الأدلة العلمية بالخدمات التعليمية والسلوكية الواقعية.">
+
               Research-oriented practice connecting scientific
               evidence with real-world educational services.
+
             </p>
 
           </div>
+
 
         </div>
 
@@ -897,7 +1768,9 @@
     </section>
 
 
-    <!-- TRAINING -->
+    <!-- =========================
+         TRAINING
+    ========================== -->
 
     <section
       class="training"
@@ -905,15 +1778,25 @@
 
       <div class="container">
 
+
         <div class="section-title">
 
-          <h2>
+          <h2
+            data-en="Training & Workshops"
+            data-ar="التدريب وورش العمل">
+
             Training & Workshops
+
           </h2>
 
-          <p>
-            Practical professional development designed to connect
-            theory with real-world practice.
+
+          <p
+            data-en="Practical professional development designed to connect theory with real-world practice."
+            data-ar="تطوير مهني عملي يهدف إلى الربط بين المعرفة النظرية والتطبيق العملي.">
+
+            Practical professional development designed
+            to connect theory with real-world practice.
+
           </p>
 
         </div>
@@ -921,28 +1804,50 @@
 
         <div class="training-grid">
 
+
           <div class="training-card">
 
-            <h3>
+            <h3
+              data-en="ABA Training"
+              data-ar="تدريب ABA">
+
               ABA Training
+
             </h3>
+
 
             <ul>
 
-              <li>
+              <li
+                data-en="Applied Behavior Analysis"
+                data-ar="تحليل السلوك التطبيقي">
+
                 Applied Behavior Analysis
+
               </li>
 
-              <li>
+              <li
+                data-en="Behavior Assessment"
+                data-ar="التقييم السلوكي">
+
                 Behavior Assessment
+
               </li>
 
-              <li>
+              <li
+                data-en="Intervention Planning"
+                data-ar="تخطيط التدخل">
+
                 Intervention Planning
+
               </li>
 
-              <li>
+              <li
+                data-en="Data Collection"
+                data-ar="جمع البيانات وتحليلها">
+
                 Data Collection
+
               </li>
 
             </ul>
@@ -952,26 +1857,47 @@
 
           <div class="training-card">
 
-            <h3>
+            <h3
+              data-en="Autism & Special Education"
+              data-ar="التوحد والتربية الخاصة">
+
               Autism & Special Education
+
             </h3>
+
 
             <ul>
 
-              <li>
+              <li
+                data-en="Understanding Autism"
+                data-ar="فهم اضطراب طيف التوحد">
+
                 Understanding Autism
+
               </li>
 
-              <li>
+              <li
+                data-en="Individualized Education"
+                data-ar="التعليم الفردي">
+
                 Individualized Education
+
               </li>
 
-              <li>
+              <li
+                data-en="Functional Skills"
+                data-ar="المهارات الوظيفية">
+
                 Functional Skills
+
               </li>
 
-              <li>
+              <li
+                data-en="Classroom Strategies"
+                data-ar="استراتيجيات إدارة الصف">
+
                 Classroom Strategies
+
               </li>
 
             </ul>
@@ -981,31 +1907,53 @@
 
           <div class="training-card">
 
-            <h3>
+            <h3
+              data-en="Professional Development"
+              data-ar="التطوير المهني">
+
               Professional Development
+
             </h3>
+
 
             <ul>
 
-              <li>
+              <li
+                data-en="Clinical Practice"
+                data-ar="الممارسة المهنية">
+
                 Clinical Practice
+
               </li>
 
-              <li>
+              <li
+                data-en="Case Management"
+                data-ar="إدارة الحالات">
+
                 Case Management
+
               </li>
 
-              <li>
+              <li
+                data-en="Professional Documentation"
+                data-ar="التوثيق المهني">
+
                 Professional Documentation
+
               </li>
 
-              <li>
+              <li
+                data-en="Family Collaboration"
+                data-ar="التعاون مع الأسرة">
+
                 Family Collaboration
+
               </li>
 
             </ul>
 
           </div>
+
 
         </div>
 
@@ -1014,21 +1962,34 @@
     </section>
 
 
-    <!-- RESEARCH -->
+    <!-- =========================
+         RESEARCH
+    ========================== -->
 
     <section id="research">
 
       <div class="container">
 
+
         <div class="section-title">
 
-          <h2>
+          <h2
+            data-en="Research"
+            data-ar="البحث العلمي">
+
             Research
+
           </h2>
 
-          <p>
-            Promoting evidence-based practice through professional
-            research, academic collaboration and knowledge sharing.
+
+          <p
+            data-en="Promoting evidence-based practice through professional research, academic collaboration and knowledge sharing."
+            data-ar="تعزيز الممارسات القائمة على الأدلة من خلال البحث المهني، والتعاون الأكاديمي، وتبادل المعرفة.">
+
+            Promoting evidence-based practice through
+            professional research, academic collaboration
+            and knowledge sharing.
+
           </p>
 
         </div>
@@ -1036,24 +1997,40 @@
 
         <div class="research-grid">
 
+
           <div class="research-card">
 
-            <h3>
+            <h3
+              data-en="Research & Publications"
+              data-ar="الأبحاث والمنشورات">
+
               Research & Publications
+
             </h3>
 
-            <p>
-              Academic and applied research related to behavior
-              analysis, special education, autism and developmental
-              support.
+
+            <p
+              data-en="Academic and applied research related to behavior analysis, special education, autism and developmental support."
+              data-ar="أبحاث أكاديمية وتطبيقية في مجالات تحليل السلوك، والتربية الخاصة، والتوحد، والدعم النمائي.">
+
+              Academic and applied research related to
+              behavior analysis, special education,
+              autism and developmental support.
+
             </p>
+
 
             <br>
 
+
             <a
               href="./research.html"
-              class="btn btn-primary">
+              class="btn btn-primary"
+              data-en="View Research"
+              data-ar="عرض الأبحاث">
+
               View Research
+
             </a>
 
           </div>
@@ -1061,17 +2038,27 @@
 
           <div class="research-card">
 
-            <h3>
+            <h3
+              data-en="Academic Collaboration"
+              data-ar="التعاون الأكاديمي">
+
               Academic Collaboration
+
             </h3>
 
-            <p>
+
+            <p
+              data-en="Collaboration with universities, professionals, educators and researchers to strengthen evidence-based behavioral and educational practice."
+              data-ar="التعاون مع الجامعات والمتخصصين والمعلمين والباحثين لتعزيز الممارسات السلوكية والتعليمية القائمة على الأدلة.">
+
               Collaboration with universities, professionals,
-              educators and researchers to strengthen evidence-based
-              behavioral and educational practice.
+              educators and researchers to strengthen
+              evidence-based behavioral and educational practice.
+
             </p>
 
           </div>
+
 
         </div>
 
@@ -1080,7 +2067,9 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
     <section
       class="contact"
@@ -1088,15 +2077,25 @@
 
       <div class="container">
 
+
         <div class="section-title">
 
-          <h2>
+          <h2
+            data-en="Contact"
+            data-ar="تواصل معنا">
+
             Contact
+
           </h2>
 
-          <p>
+
+          <p
+            data-en="For consultation, professional training, collaboration and further information."
+            data-ar="للاستشارات والتدريب المهني والتعاون والمزيد من المعلومات.">
+
             For consultation, professional training,
             collaboration and further information.
+
           </p>
 
         </div>
@@ -1104,14 +2103,24 @@
 
         <div class="contact-grid">
 
+
           <div class="contact-card">
 
-            <h3>
+            <h3
+              data-en="Professional Consultation"
+              data-ar="الاستشارات المهنية">
+
               Professional Consultation
+
             </h3>
 
-            <p>
+
+            <p
+              data-en="Contact us for behavioral and educational consultation."
+              data-ar="تواصل معنا للحصول على الاستشارات السلوكية والتعليمية.">
+
               Contact us for behavioral and educational consultation.
+
             </p>
 
           </div>
@@ -1119,12 +2128,21 @@
 
           <div class="contact-card">
 
-            <h3>
+            <h3
+              data-en="Training"
+              data-ar="التدريب">
+
               Training
+
             </h3>
 
-            <p>
+
+            <p
+              data-en="Inquire about professional workshops and training."
+              data-ar="استفسر عن ورش العمل والبرامج التدريبية المهنية.">
+
               Inquire about professional workshops and training.
+
             </p>
 
           </div>
@@ -1132,42 +2150,58 @@
 
           <div class="contact-card">
 
-            <h3>
+            <h3
+              data-en="Research"
+              data-ar="البحث العلمي">
+
               Research
+
             </h3>
 
-            <p>
+
+            <p
+              data-en="Academic and professional research collaboration."
+              data-ar="التعاون في الأبحاث الأكاديمية والمهنية.">
+
               Academic and professional research collaboration.
+
             </p>
 
           </div>
+
 
         </div>
 
 
-        <br>
+        <br><br>
 
 
         <div style="text-align:center;">
 
           <a
             href="./contact.html"
-            class="btn btn-secondary">
+            class="btn btn-secondary"
+            data-en="Contact Page"
+            data-ar="صفحة التواصل">
+
             Contact Page
+
           </a>
 
         </div>
 
+
       </div>
 
     </section>
+
 
   </main>
 
 
   <!-- =========================
        FOOTER
-  ========================= -->
+  ========================== -->
 
   <footer>
 
@@ -1175,51 +2209,78 @@
       © 2026 FOUDA ABA – Behavioral & Development Center
     </p>
 
-    <p>
+    <p
+      data-en="Dr. Mohamed Fouda"
+      data-ar="د. محمد فودة">
+
       Dr. Mohamed Fouda
+
     </p>
 
   </footer>
 
 
   <!-- =========================
-       LANGUAGE
-  ========================= -->
+       LANGUAGE SCRIPT
+  ========================== -->
 
   <script>
 
+    let currentLanguage = "en";
+
+
     function toggleLanguage() {
 
-      const body = document.body;
-      const button = document.querySelector(".language");
+      const body =
+        document.body;
 
-      if (!body.classList.contains("rtl")) {
+      const button =
+        document.querySelector(".language");
+
+      const elements =
+        document.querySelectorAll("[data-en]");
+
+
+      if (currentLanguage === "en") {
+
+        currentLanguage = "ar";
 
         body.classList.add("rtl");
 
         document.documentElement.lang = "ar";
 
+        document.documentElement.dir = "rtl";
+
         button.textContent = "English";
 
-        document.querySelector(".brand-text strong").textContent =
-          "فودة ABA";
 
-        document.querySelector(".brand-text span").textContent =
-          "مركز السلوك والتطوير";
+        elements.forEach(function(element) {
+
+          element.textContent =
+            element.getAttribute("data-ar");
+
+        });
+
 
       } else {
+
+        currentLanguage = "en";
 
         body.classList.remove("rtl");
 
         document.documentElement.lang = "en";
 
+        document.documentElement.dir = "ltr";
+
         button.textContent = "العربية";
 
-        document.querySelector(".brand-text strong").textContent =
-          "FOUDA ABA";
 
-        document.querySelector(".brand-text span").textContent =
-          "Behavioral & Development Center";
+        elements.forEach(function(element) {
+
+          element.textContent =
+            element.getAttribute("data-en");
+
+        });
 
       }
 
@@ -1227,5 +2288,7 @@
 
   </script>
 
+
 </body>
+
 </html>

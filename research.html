@@ -2,1069 +2,554 @@
 <html lang="en" dir="ltr">
 
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Research | FOUDA ABA</title>
 
 <meta name="description"
-      content="Research and academic interests of Dr. Mohamed Gamal Awad Fouda in Educational Psychology, Special Education, Autism Spectrum Disorder and Applied Behavior Analysis.">
+content="Research profile of Dr. Mohamed Gamal Awad Fouda in Applied Behavior Analysis, Autism, Special Education, Educational Psychology and related fields.">
 
 <link rel="icon" href="logo.png">
 
 <style>
 
-/* =====================================================
-   GLOBAL VARIABLES
-===================================================== */
-
 :root{
-
-  --navy:#102a43;
-  --blue:#1769aa;
-  --teal:#159a9c;
-  --green:#2f9d73;
-
-  --light:#f5f9fc;
-  --white:#ffffff;
-
-  --text:#243b53;
-  --muted:#627d98;
-
-  --border:#d9e5ef;
-
-  --shadow:
-    0 12px 35px rgba(16,42,67,.10);
-
-  --radius:20px;
+--navy:#102a43;
+--blue:#1769aa;
+--teal:#159a9c;
+--light:#f5f9fc;
+--text:#243b53;
+--muted:#627d98;
+--border:#d9e5ef;
+--white:#ffffff;
+--shadow:0 12px 35px rgba(16,42,67,.10);
 }
 
-
-/* =====================================================
-   RESET
-===================================================== */
-
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-
-  margin:0;
-
-  font-family:
-    Arial,
-    "Segoe UI",
-    sans-serif;
-
-  background:var(--light);
-
-  color:var(--text);
-
-  line-height:1.7;
+font-family:Arial,"Segoe UI",sans-serif;
+color:var(--text);
+background:#fff;
+line-height:1.7;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+text-decoration:none;
+color:inherit;
 }
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-
-/* =====================================================
-   CONTAINER
-===================================================== */
 
 .container{
-
-  width:min(1120px,92%);
-
-  margin:auto;
+width:min(1120px,92%);
+margin:auto;
 }
 
-
-/* =====================================================
-   HEADER
-===================================================== */
+/* =========================
+HEADER
+========================= */
 
 header{
-
-  position:sticky;
-
-  top:0;
-
-  z-index:1000;
-
-  background:
-    rgba(255,255,255,.97);
-
-  border-bottom:
-    1px solid var(--border);
-
-  box-shadow:
-    0 2px 15px rgba(0,0,0,.04);
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--border);
+box-shadow:0 2px 15px rgba(0,0,0,.04);
 }
-
 
 .nav{
-
-  min-height:86px;
-
-  display:flex;
-
-  align-items:center;
-
-  gap:25px;
+min-height:86px;
+display:flex;
+align-items:center;
+gap:25px;
 }
 
-
-/* BRAND */
-
 .brand{
-
-  display:flex;
-
-  align-items:center;
-
-  gap:13px;
-
-  margin-right:auto;
+display:flex;
+align-items:center;
+gap:13px;
+margin-right:auto;
 }
 
 .brand img{
-
-  width:68px;
-
-  height:68px;
-
-  object-fit:contain;
+width:68px;
+height:68px;
+object-fit:contain;
 }
 
 .brand strong{
-
-  display:block;
-
-  font-size:24px;
-
-  color:var(--navy);
+display:block;
+font-size:24px;
+color:var(--navy);
 }
 
 .brand small{
-
-  display:block;
-
-  color:var(--muted);
-
-  font-size:13px;
-
-  font-weight:600;
+display:block;
+font-size:13px;
+color:var(--muted);
 }
 
-
-/* MENU */
-
 .menu{
-
-  display:flex;
-
-  align-items:center;
-
-  gap:24px;
-
-  font-weight:700;
-
-  color:var(--navy);
+display:flex;
+align-items:center;
+gap:22px;
+font-weight:700;
+color:var(--navy);
 }
 
 .menu a{
-
-  transition:.2s;
+transition:.2s;
 }
 
 .menu a:hover{
-
-  color:var(--teal);
+color:var(--teal);
 }
-
-
-/* LANGUAGE */
 
 .lang{
-
-  border:
-    1px solid var(--border);
-
-  background:#fff;
-
-  border-radius:12px;
-
-  padding:10px 17px;
-
-  font-weight:700;
-
-  color:var(--navy);
-
-  cursor:pointer;
-
-  transition:.2s;
+border:1px solid var(--border);
+background:#fff;
+border-radius:12px;
+padding:10px 17px;
+font-weight:700;
+color:var(--navy);
+cursor:pointer;
 }
 
-.lang:hover{
-
-  background:var(--light);
-
-  border-color:var(--teal);
-}
-
-
-/* =====================================================
-   HERO
-===================================================== */
+/* =========================
+HERO
+========================= */
 
 .hero{
-
-  background:
-
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(21,154,156,.14),
-      transparent 30%
-    ),
-
-    linear-gradient(
-      135deg,
-      #f3f9fd,
-      #ffffff
-    );
-
-  padding:
-    85px 0 75px;
+background:
+radial-gradient(circle at 85% 20%,rgba(21,154,156,.12),transparent 30%),
+linear-gradient(135deg,#f3f9fc,#ffffff);
+padding:90px 0 80px;
 }
-
 
 .hero-content{
-
-  max-width:900px;
-
-  margin:auto;
-
-  text-align:center;
+max-width:900px;
+margin:auto;
+text-align:center;
 }
-
 
 .eyebrow{
-
-  display:inline-block;
-
-  padding:
-    9px 18px;
-
-  border-radius:30px;
-
-  background:#e9f5f8;
-
-  color:var(--blue);
-
-  font-size:14px;
-
-  font-weight:700;
-
-  margin-bottom:20px;
+display:inline-block;
+padding:9px 18px;
+border-radius:30px;
+background:#e9f5f8;
+color:var(--blue);
+font-weight:700;
+margin-bottom:20px;
 }
 
-
-.hero h1{
-
-  font-size:
-    clamp(46px,7vw,72px);
-
-  line-height:1.05;
-
-  color:var(--navy);
-
-  margin-bottom:20px;
-
-  letter-spacing:-1.5px;
+h1{
+font-size:56px;
+line-height:1.1;
+color:var(--navy);
+margin-bottom:20px;
 }
 
-
-.hero h1 span{
-
-  color:var(--teal);
+h1 span{
+color:var(--teal);
 }
-
 
 .hero p{
-
-  max-width:820px;
-
-  margin:auto;
-
-  color:var(--muted);
-
-  font-size:19px;
+font-size:19px;
+color:var(--muted);
+max-width:800px;
+margin:auto;
 }
 
-
-/* =====================================================
-   SECTION
-===================================================== */
+/* =========================
+GENERAL
+========================= */
 
 section{
-
-  padding:75px 0;
+padding:75px 0;
 }
-
 
 .section-head{
-
-  text-align:center;
-
-  max-width:820px;
-
-  margin:
-    0 auto 45px;
+text-align:center;
+max-width:820px;
+margin:0 auto 45px;
 }
-
 
 .section-head h2{
-
-  font-size:38px;
-
-  color:var(--navy);
-
-  margin-bottom:10px;
+font-size:38px;
+color:var(--navy);
+margin-bottom:12px;
 }
-
 
 .section-head p{
-
-  color:var(--muted);
-
-  font-size:17px;
+font-size:17px;
+color:var(--muted);
 }
 
+/* =========================
+RESEARCH AREAS
+========================= */
 
-/* =====================================================
-   RESEARCH OVERVIEW
-===================================================== */
-
-.overview{
-
-  background:#fff;
+.research-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
 }
 
-
-.overview-grid{
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,1fr);
-
-  gap:22px;
+.research-card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:20px;
+padding:30px;
+box-shadow:0 8px 25px rgba(16,42,67,.06);
+transition:.25s;
 }
 
-
-.overview-card{
-
-  background:var(--light);
-
-  border:
-    1px solid var(--border);
-
-  border-radius:var(--radius);
-
-  padding:30px;
-
-  text-align:center;
-
-  transition:.25s;
+.research-card:hover{
+transform:translateY(-5px);
+box-shadow:var(--shadow);
 }
 
-
-.overview-card:hover{
-
-  transform:
-    translateY(-5px);
-
-  box-shadow:var(--shadow);
+.research-icon{
+width:55px;
+height:55px;
+display:grid;
+place-items:center;
+border-radius:15px;
+background:#e8f5f5;
+font-size:27px;
+margin-bottom:18px;
 }
 
-
-.overview-icon{
-
-  width:58px;
-
-  height:58px;
-
-  margin:
-    0 auto 18px;
-
-  display:grid;
-
-  place-items:center;
-
-  border-radius:16px;
-
-  background:#e7f4f0;
-
-  color:var(--teal);
-
-  font-size:28px;
+.research-card h3{
+color:var(--navy);
+font-size:22px;
+margin-bottom:10px;
 }
 
-
-.overview-card h3{
-
-  color:var(--navy);
-
-  margin-bottom:10px;
-
-  font-size:21px;
+.research-card p{
+color:var(--muted);
 }
 
+/* =========================
+FEATURED RESEARCH
+========================= */
 
-.overview-card p{
-
-  color:var(--muted);
-
-  font-size:14px;
+.featured{
+background:var(--light);
 }
 
-
-/* =====================================================
-   RESEARCH INTERESTS
-===================================================== */
-
-.interests{
-
-  background:var(--light);
+.featured-box{
+background:#fff;
+border:1px solid var(--border);
+border-radius:24px;
+padding:38px;
+box-shadow:var(--shadow);
 }
 
-
-.interest-grid{
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(2,1fr);
-
-  gap:25px;
+.featured-box h3{
+font-size:27px;
+color:var(--navy);
+margin-bottom:15px;
 }
 
-
-.interest-card{
-
-  background:#fff;
-
-  border:
-    1px solid var(--border);
-
-  border-radius:var(--radius);
-
-  padding:30px;
-
-  box-shadow:
-    0 8px 25px
-    rgba(16,42,67,.05);
-
-  transition:.25s;
+.featured-box p{
+color:var(--muted);
+margin-bottom:15px;
 }
 
-
-.interest-card:hover{
-
-  transform:
-    translateY(-4px);
-
-  box-shadow:var(--shadow);
+.highlight{
+margin-top:25px;
+padding:20px;
+background:#f1f8f8;
+border-left:4px solid var(--teal);
+border-radius:10px;
 }
 
-
-.interest-number{
-
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  width:42px;
-
-  height:42px;
-
-  border-radius:12px;
-
-  background:#e9f5f8;
-
-  color:var(--teal);
-
-  font-weight:800;
-
-  margin-bottom:15px;
+.rtl .highlight{
+border-left:0;
+border-right:4px solid var(--teal);
 }
 
-
-.interest-card h3{
-
-  color:var(--navy);
-
-  font-size:22px;
-
-  margin-bottom:10px;
-}
-
-
-.interest-card p{
-
-  color:var(--muted);
-
-  margin-bottom:12px;
-}
-
-
-.interest-card ul{
-
-  padding-left:21px;
-
-  color:var(--text);
-}
-
-
-.interest-card li{
-
-  margin-bottom:5px;
-}
-
-
-/* =====================================================
-   PUBLICATIONS
-===================================================== */
-
-.publications{
-
-  background:#fff;
-}
-
-
-.publication-list{
-
-  max-width:950px;
-
-  margin:auto;
-}
-
-
-.publication{
-
-  background:var(--light);
-
-  border:
-    1px solid var(--border);
-
-  border-radius:18px;
-
-  padding:27px 30px;
-
-  margin-bottom:18px;
-
-  position:relative;
-
-  transition:.2s;
-}
-
-
-.publication:hover{
-
-  box-shadow:var(--shadow);
-
-  transform:
-    translateY(-2px);
-}
-
-
-.publication-label{
-
-  display:inline-block;
-
-  padding:
-    5px 12px;
-
-  border-radius:20px;
-
-  background:#e7f4f0;
-
-  color:#117b70;
-
-  font-size:12px;
-
-  font-weight:800;
-
-  margin-bottom:10px;
-}
-
-
-.publication h3{
-
-  color:var(--navy);
-
-  font-size:20px;
-
-  margin-bottom:8px;
-}
-
-
-.publication p{
-
-  color:var(--muted);
-
-  font-size:15px;
-}
-
-
-.publication-note{
-
-  margin-top:25px;
-
-  text-align:center;
-
-  color:var(--muted);
-
-  font-size:14px;
-}
-
-
-/* =====================================================
-   RESEARCH AREAS
-===================================================== */
-
-.research-areas{
-
-  background:
-
-    linear-gradient(
-      120deg,
-      #edf7f5,
-      #f6f9fc
-    );
-}
-
-
-.area-grid{
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,1fr);
-
-  gap:20px;
-}
-
-
-.area{
-
-  background:#fff;
-
-  border:
-    1px solid var(--border);
-
-  border-radius:18px;
-
-  padding:25px;
-
-  text-align:center;
-}
-
-
-.area h3{
-
-  color:var(--navy);
-
-  margin-bottom:8px;
-}
-
-
-.area p{
-
-  color:var(--muted);
-
-  font-size:14px;
-}
-
-
-/* =====================================================
-   ACADEMIC COLLABORATION
-===================================================== */
+/* =========================
+ACADEMIC COLLABORATION
+========================= */
 
 .collaboration{
-
-  background:#fff;
+background:#fff;
 }
 
-
-.collaboration-box{
-
-  max-width:900px;
-
-  margin:auto;
-
-  background:
-
-    linear-gradient(
-      135deg,
-      #f5fafd,
-      #eef8f6
-    );
-
-  border:
-    1px solid var(--border);
-
-  border-radius:25px;
-
-  padding:45px;
-
-  text-align:center;
-
-  box-shadow:var(--shadow);
+.collaboration-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
 }
 
-
-.collaboration-box h2{
-
-  color:var(--navy);
-
-  font-size:32px;
-
-  margin-bottom:14px;
+.collab-card{
+background:linear-gradient(135deg,#f6fafc,#ffffff);
+border:1px solid var(--border);
+border-radius:20px;
+padding:30px;
 }
 
-
-.collaboration-box p{
-
-  color:var(--muted);
-
-  max-width:720px;
-
-  margin:
-    0 auto 25px;
+.collab-card h3{
+color:var(--navy);
+font-size:22px;
+margin-bottom:12px;
 }
 
+.collab-card p{
+color:var(--muted);
+}
 
-/* =====================================================
-   BUTTONS
-===================================================== */
+.collab-card ul{
+padding-left:22px;
+color:var(--muted);
+}
+
+.rtl .collab-card ul{
+padding-left:0;
+padding-right:22px;
+}
+
+/* =========================
+PUBLICATIONS
+========================= */
+
+.publications{
+background:var(--light);
+}
+
+.publication-list{
+max-width:900px;
+margin:auto;
+}
+
+.publication{
+background:#fff;
+border:1px solid var(--border);
+border-radius:16px;
+padding:25px;
+margin-bottom:18px;
+}
+
+.publication h3{
+color:var(--navy);
+font-size:20px;
+margin-bottom:8px;
+}
+
+.publication p{
+color:var(--muted);
+}
+
+/* =========================
+ACADEMIC PROFILE
+========================= */
+
+.profile-section{
+background:#fff;
+}
+
+.profile-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+.profile-item{
+padding:28px;
+background:var(--light);
+border:1px solid var(--border);
+border-radius:18px;
+}
+
+.profile-item h3{
+color:var(--navy);
+margin-bottom:10px;
+}
+
+.profile-item p{
+color:var(--muted);
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+background:var(--navy);
+color:#fff;
+text-align:center;
+padding:65px 20px;
+}
+
+.cta h2{
+font-size:36px;
+margin-bottom:12px;
+}
+
+.cta p{
+max-width:750px;
+margin:0 auto 25px;
+color:#d9e5ef;
+}
 
 .btn{
-
-  display:inline-block;
-
-  padding:
-    13px 24px;
-
-  border-radius:12px;
-
-  font-weight:700;
-
-  margin:5px;
-
-  transition:.2s;
+display:inline-block;
+padding:13px 24px;
+border-radius:12px;
+font-weight:700;
+margin:5px;
 }
-
 
 .btn-primary{
-
-  background:var(--navy);
-
-  color:#fff;
+background:#fff;
+color:var(--navy);
 }
-
-
-.btn-primary:hover{
-
-  background:var(--blue);
-
-  transform:
-    translateY(-2px);
-}
-
 
 .btn-secondary{
-
-  border:
-    1px solid var(--border);
-
-  color:var(--navy);
-
-  background:#fff;
+border:1px solid rgba(255,255,255,.55);
+color:#fff;
 }
 
-
-.btn-secondary:hover{
-
-  border-color:var(--teal);
-
-  color:var(--teal);
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
+/* =========================
+FOOTER
+========================= */
 
 footer{
-
-  background:#0b2033;
-
-  color:#d9e5ef;
-
-  padding:32px 0;
-
-  text-align:center;
+background:#0b2033;
+color:#d9e5ef;
+padding:30px 0;
+text-align:center;
 }
-
 
 footer p{
-
-  margin:4px 0;
-
-  font-size:14px;
+margin:4px 0;
+font-size:14px;
 }
 
+/* =========================
+RTL
+========================= */
 
-/* =====================================================
-   RTL
-===================================================== */
-
-body.rtl{
-
-  direction:rtl;
-
-  text-align:right;
+.rtl{
+direction:rtl;
+text-align:right;
 }
 
-
-body.rtl .brand{
-
-  margin-right:0;
-
-  margin-left:auto;
+.rtl .brand{
+margin-right:0;
+margin-left:auto;
 }
 
-
-body.rtl .menu{
-
-  flex-direction:row-reverse;
+.rtl .menu{
+flex-direction:row-reverse;
 }
 
-
-body.rtl ul{
-
-  padding-left:0;
-
-  padding-right:22px;
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
+/* =========================
+MOBILE
+========================= */
 
 @media(max-width:900px){
 
-  .nav{
-
-    flex-wrap:wrap;
-
-    padding:
-      12px 0;
-  }
-
-
-  .menu{
-
-    gap:13px;
-
-    font-size:14px;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-  }
-
-
-  .hero{
-
-    padding:
-      65px 0;
-  }
-
-
-  .overview-grid,
-  .area-grid{
-
-    grid-template-columns:
-      repeat(2,1fr);
-  }
-
-
-  .interest-grid{
-
-    grid-template-columns:1fr;
-  }
+.nav{
+flex-wrap:wrap;
 }
 
+.menu{
+gap:13px;
+font-size:14px;
+}
 
-@media(max-width:680px){
+.hero{
+padding:65px 0;
+}
 
-  .nav{
+h1{
+font-size:46px;
+}
 
-    min-height:auto;
-  }
+.research-grid,
+.collaboration-grid,
+.profile-box{
+grid-template-columns:1fr;
+}
 
+}
 
-  .brand img{
+@media(max-width:650px){
 
-    width:58px;
+.brand img{
+width:56px;
+height:56px;
+}
 
-    height:58px;
-  }
+.brand strong{
+font-size:21px;
+}
 
+.menu{
+width:100%;
+justify-content:center;
+flex-wrap:wrap;
+order:3;
+}
 
-  .brand strong{
+.lang{
+position:absolute;
+right:4%;
+top:20px;
+}
 
-    font-size:21px;
-  }
+.rtl .lang{
+right:auto;
+left:4%;
+}
 
+h1{
+font-size:38px;
+}
 
-  .brand small{
+section{
+padding:55px 0;
+}
 
-    font-size:11px;
-  }
+.section-head h2{
+font-size:31px;
+}
 
-
-  .menu{
-
-    width:100%;
-
-    order:3;
-
-    justify-content:center;
-
-    gap:10px;
-  }
-
-
-  .menu a{
-
-    font-size:12px;
-  }
-
-
-  .lang{
-
-    position:absolute;
-
-    right:4%;
-
-    top:18px;
-
-    padding:
-      8px 12px;
-  }
-
-
-  .rtl .lang{
-
-    right:auto;
-
-    left:4%;
-  }
-
-
-  .hero h1{
-
-    font-size:40px;
-
-    letter-spacing:0;
-  }
-
-
-  .hero p{
-
-    font-size:16px;
-  }
-
-
-  .section-head h2{
-
-    font-size:31px;
-  }
-
-
-  .overview-grid,
-  .area-grid{
-
-    grid-template-columns:1fr;
-  }
-
-
-  .collaboration-box{
-
-    padding:30px 20px;
-  }
-
-
-  .collaboration-box h2{
-
-    font-size:27px;
-  }
-
-
-  section{
-
-    padding:
-      55px 0;
-  }
+.hero p{
+font-size:17px;
+}
 
 }
 
 </style>
-
 </head>
 
 
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<!-- =========================
+HEADER
+========================= -->
 
 <header>
 
 <div class="container nav">
 
-
 <a class="brand" href="index.html">
 
-<img
-src="logo.png"
-alt="FOUDA ABA Logo"
->
+<img src="logo.png" alt="FOUDA ABA Logo">
 
 <span>
 
@@ -1083,39 +568,27 @@ Behavioral &amp; Development Center
 
 <a href="index.html"
 data-en="Home"
-data-ar="الرئيسية">
-Home
-</a>
+data-ar="الرئيسية">Home</a>
 
 <a href="about.html"
 data-en="About Dr. Mohamed"
-data-ar="عن د. محمد">
-About Dr. Mohamed
-</a>
+data-ar="عن د. محمد">About Dr. Mohamed</a>
 
 <a href="services.html"
 data-en="Services"
-data-ar="الخدمات">
-Services
-</a>
+data-ar="الخدمات">Services</a>
 
 <a href="training.html"
 data-en="Training"
-data-ar="التدريب">
-Training
-</a>
+data-ar="التدريب">Training</a>
 
 <a href="research.html"
 data-en="Research"
-data-ar="البحث العلمي">
-Research
-</a>
+data-ar="البحث العلمي">Research</a>
 
 <a href="contact.html"
 data-en="Contact"
-data-ar="تواصل معنا">
-Contact
-</a>
+data-ar="تواصل معنا">Contact</a>
 
 </nav>
 
@@ -1124,58 +597,46 @@ Contact
 class="lang"
 id="lang"
 type="button">
-
 العربية
-
 </button>
-
 
 </div>
 
 </header>
 
 
-<!-- =====================================================
-     MAIN
-===================================================== -->
-
 <main>
 
-
-<!-- =====================================================
-     HERO
-===================================================== -->
+<!-- =========================
+HERO
+========================= -->
 
 <section class="hero">
 
 <div class="container hero-content">
 
+<span class="eyebrow"
+data-en="Research • Academic Collaboration • Evidence-Based Practice"
+data-ar="البحث العلمي • التعاون الأكاديمي • الممارسة القائمة على الأدلة">
 
-<span
-class="eyebrow"
-data-en="Research • Evidence • Academic Collaboration"
-data-ar="البحث العلمي • الأدلة العلمية • التعاون الأكاديمي">
-
-Research • Evidence • Academic Collaboration
+Research • Academic Collaboration • Evidence-Based Practice
 
 </span>
 
 
 <h1>
 
-<span
-data-en="Research &"
+<span data-en="Research &amp;"
 data-ar="البحث العلمي و">
 
 Research &amp;
 
 </span>
 
-<span
-data-en="Academic Work"
-data-ar="العمل الأكاديمي">
+<span data-en="Academic Collaboration"
+data-ar="التعاون الأكاديمي">
 
-Academic Work
+Academic Collaboration
 
 </span>
 
@@ -1183,142 +644,27 @@ Academic Work
 
 
 <p
-data-en="Research interests and academic activities of Dr. Mohamed Gamal Awad Fouda, with a professional focus on educational psychology, special education, autism spectrum disorder, applied behavior analysis, communication and evidence-informed practice."
-data-ar="الاهتمامات البحثية والأنشطة الأكاديمية للدكتور محمد جمال عوض فودة، مع تركيز مهني على علم النفس التربوي، والتربية الخاصة، واضطراب طيف التوحد، وتحليل السلوك التطبيقي، والتواصل والممارسات القائمة على الأدلة.">
+data-en="A professional research profile focused on Applied Behavior Analysis, autism, special education, educational psychology, communication and evidence-based educational practice."
+data-ar="ملف بحثي مهني يركز على تحليل السلوك التطبيقي، واضطراب طيف التوحد، والتربية الخاصة، وعلم النفس التربوي، والتواصل والممارسات التعليمية القائمة على الأدلة.">
 
-Research interests and academic activities of Dr. Mohamed Gamal Awad Fouda, with a professional focus on educational psychology, special education, autism spectrum disorder, applied behavior analysis, communication and evidence-informed practice.
+A professional research profile focused on Applied Behavior Analysis,
+autism, special education, educational psychology, communication
+and evidence-based educational practice.
 
 </p>
-
 
 </div>
 
 </section>
 
 
-<!-- =====================================================
-     RESEARCH OVERVIEW
-===================================================== -->
+<!-- =========================
+RESEARCH INTERESTS
+========================= -->
 
-<section class="overview">
-
-<div class="container">
-
-
-<div class="section-head">
-
-<h2
-data-en="Research Overview"
-data-ar="نظرة عامة على البحث العلمي">
-
-Research Overview
-
-</h2>
-
-<p
-data-en="Connecting academic knowledge with practical behavioral and educational applications."
-data-ar="ربط المعرفة الأكاديمية بالتطبيقات السلوكية والتربوية العملية.">
-
-Connecting academic knowledge with practical behavioral and educational applications.
-
-</p>
-
-</div>
-
-
-<div class="overview-grid">
-
-
-<div class="overview-card">
-
-<div class="overview-icon">
-🔬
-</div>
-
-<h3
-data-en="Applied Research"
-data-ar="البحث التطبيقي">
-
-Applied Research
-
-</h3>
-
-<p
-data-en="Research that connects behavioral and educational theory with practical intervention and support."
-data-ar="بحوث تربط بين النظرية السلوكية والتربوية وبين التدخل والدعم العملي.">
-
-Research that connects behavioral and educational theory with practical intervention and support.
-
-</p>
-
-</div>
-
-
-<div class="overview-card">
-
-<div class="overview-icon">
-🧠
-</div>
-
-<h3
-data-en="Behavior & Autism"
-data-ar="السلوك والتوحد">
-
-Behavior &amp; Autism
-
-</h3>
-
-<p
-data-en="Interest in autism, communication, behavior assessment and evidence-informed intervention."
-data-ar="اهتمام بالتوحد والتواصل وتقييم السلوك والتدخلات القائمة على الأدلة.">
-
-Interest in autism, communication, behavior assessment and evidence-informed intervention.
-
-</p>
-
-</div>
-
-
-<div class="overview-card">
-
-<div class="overview-icon">
-🎓
-</div>
-
-<h3
-data-en="Academic Collaboration"
-data-ar="التعاون الأكاديمي">
-
-Academic Collaboration
-
-</h3>
-
-<p
-data-en="Supporting collaboration among universities, researchers, educators and professionals."
-data-ar="دعم التعاون بين الجامعات والباحثين والأكاديميين والمهنيين.">
-
-Supporting collaboration among universities, researchers, educators and professionals.
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     RESEARCH INTERESTS
-===================================================== -->
-
-<section class="interests">
+<section>
 
 <div class="container">
-
 
 <div class="section-head">
 
@@ -1331,25 +677,24 @@ Research Interests
 </h2>
 
 <p
-data-en="Key areas of academic and applied interest."
-data-ar="أبرز المجالات ذات الاهتمام الأكاديمي والتطبيقي.">
+data-en="Areas of academic and applied interest related to behavioral, developmental and educational practice."
+data-ar="مجالات الاهتمام الأكاديمي والتطبيقي المرتبطة بالممارسة السلوكية والنمائية والتربوية.">
 
-Key areas of academic and applied interest.
+Areas of academic and applied interest related to behavioral,
+developmental and educational practice.
 
 </p>
 
 </div>
 
 
-<div class="interest-grid">
+<div class="research-grid">
 
 
-<!-- 1 -->
+<article class="research-card">
 
-<article class="interest-card">
-
-<div class="interest-number">
-01
+<div class="research-icon">
+🧩
 </div>
 
 <h3
@@ -1361,44 +706,22 @@ Autism Spectrum Disorder
 </h3>
 
 <p
-data-en="Research related to developmental, educational, behavioral and communication needs of individuals with autism."
-data-ar="البحث في الجوانب النمائية والتربوية والسلوكية والتواصلية لدى الأشخاص ذوي اضطراب طيف التوحد.">
+data-en="Research and applied work related to communication, social skills, adaptive behavior, learning and intervention for individuals with autism spectrum disorder."
+data-ar="البحث والممارسة التطبيقية المرتبطة بالتواصل، والمهارات الاجتماعية، والسلوك التكيفي، والتعلم والتدخل لدى الأشخاص ذوي اضطراب طيف التوحد.">
 
-Research related to developmental, educational, behavioral and communication needs of individuals with autism.
+Research and applied work related to communication,
+social skills, adaptive behavior, learning and intervention
+for individuals with autism spectrum disorder.
 
 </p>
-
-<ul>
-
-<li
-data-en="Communication skills"
-data-ar="مهارات التواصل">
-Communication skills
-</li>
-
-<li
-data-en="Social skills"
-data-ar="المهارات الاجتماعية">
-Social skills
-</li>
-
-<li
-data-en="Adaptive behavior"
-data-ar="السلوك التكيفي">
-Adaptive behavior
-</li>
-
-</ul>
 
 </article>
 
 
-<!-- 2 -->
+<article class="research-card">
 
-<article class="interest-card">
-
-<div class="interest-number">
-02
+<div class="research-icon">
+🧠
 </div>
 
 <h3
@@ -1410,142 +733,49 @@ Applied Behavior Analysis
 </h3>
 
 <p
-data-en="Application of behavior-analytic principles to assessment, intervention, learning and behavior support."
-data-ar="تطبيق مبادئ تحليل السلوك في التقييم والتدخل والتعلم ودعم السلوك.">
+data-en="Behavior assessment, functional behavior assessment, intervention planning, positive behavior support and data-informed decision making."
+data-ar="تقييم السلوك، والتقييم الوظيفي للسلوك، وتخطيط التدخل، ودعم السلوك الإيجابي، واتخاذ القرارات المبنية على البيانات.">
 
-Application of behavior-analytic principles to assessment, intervention, learning and behavior support.
+Behavior assessment, functional behavior assessment,
+intervention planning, positive behavior support and
+data-informed decision making.
 
 </p>
-
-<ul>
-
-<li
-data-en="Behavior assessment"
-data-ar="تقييم السلوك">
-Behavior assessment
-</li>
-
-<li
-data-en="Intervention planning"
-data-ar="تخطيط التدخل">
-Intervention planning
-</li>
-
-<li
-data-en="Positive behavior support"
-data-ar="دعم السلوك الإيجابي">
-Positive behavior support
-</li>
-
-</ul>
 
 </article>
 
 
-<!-- 3 -->
+<article class="research-card">
 
-<article class="interest-card">
-
-<div class="interest-number">
-03
+<div class="research-icon">
+💬
 </div>
 
 <h3
-data-en="Communication & Speech"
-data-ar="التواصل واضطرابات النطق">
+data-en="Communication &amp; Language"
+data-ar="التواصل واللغة">
 
-Communication &amp; Speech
+Communication &amp; Language
 
 </h3>
 
 <p
-data-en="Academic and applied interest in communication development and communication disorders."
-data-ar="اهتمام أكاديمي وتطبيقي بتنمية التواصل واضطرابات التواصل.">
+data-en="Communication development and intervention, including work related to speech and language disorders and communication skills."
+data-ar="تنمية التواصل والتدخلات المرتبطة به، بما في ذلك المجالات المتعلقة باضطرابات النطق واللغة ومهارات التواصل.">
 
-Academic and applied interest in communication development and communication disorders.
+Communication development and intervention, including
+work related to speech and language disorders and
+communication skills.
 
 </p>
-
-<ul>
-
-<li
-data-en="Language development"
-data-ar="تنمية اللغة">
-Language development
-</li>
-
-<li
-data-en="Communication programs"
-data-ar="برامج التواصل">
-Communication programs
-</li>
-
-<li
-data-en="Social communication"
-data-ar="التواصل الاجتماعي">
-Social communication
-</li>
-
-</ul>
 
 </article>
 
 
-<!-- 4 -->
+<article class="research-card">
 
-<article class="interest-card">
-
-<div class="interest-number">
-04
-</div>
-
-<h3
-data-en="Special Education"
-data-ar="التربية الخاصة">
-
-Special Education
-
-</h3>
-
-<p
-data-en="Research related to individualized education, inclusion and effective educational support for learners with disabilities."
-data-ar="البحث في التعليم الفردي والتعليم الدامج والدعم التربوي الفعال للمتعلمين ذوي الإعاقة.">
-
-Research related to individualized education, inclusion and effective educational support for learners with disabilities.
-
-</p>
-
-<ul>
-
-<li
-data-en="Individualized education"
-data-ar="التعليم الفردي">
-Individualized education
-</li>
-
-<li
-data-en="Inclusive education"
-data-ar="التعليم الدامج">
-Inclusive education
-</li>
-
-<li
-data-en="Teacher preparation"
-data-ar="إعداد المعلمين">
-Teacher preparation
-</li>
-
-</ul>
-
-</article>
-
-
-<!-- 5 -->
-
-<article class="interest-card">
-
-<div class="interest-number">
-05
+<div class="research-icon">
+👨‍👩‍👧
 </div>
 
 <h3
@@ -1557,83 +787,67 @@ Family Involvement
 </h3>
 
 <p
-data-en="Family participation, parent training and the role of caregivers in supporting children's development and learning."
-data-ar="مشاركة الأسرة وتدريب الوالدين ودور مقدمي الرعاية في دعم نمو الأطفال وتعلمهم.">
+data-en="Parent involvement, parent training and family participation in supporting children's communication, learning and development."
+data-ar="مشاركة الوالدين، وتدريب الوالدين، ودور الأسرة في دعم التواصل والتعلم والنمو لدى الأطفال.">
 
-Family participation, parent training and the role of caregivers in supporting children's development and learning.
+Parent involvement, parent training and family participation
+in supporting children's communication, learning and development.
 
 </p>
-
-<ul>
-
-<li
-data-en="Parent training"
-data-ar="تدريب الوالدين">
-Parent training
-</li>
-
-<li
-data-en="Family collaboration"
-data-ar="التعاون مع الأسرة">
-Family collaboration
-</li>
-
-<li
-data-en="Home-based support"
-data-ar="الدعم المنزلي">
-Home-based support
-</li>
-
-</ul>
 
 </article>
 
 
-<!-- 6 -->
+<article class="research-card">
 
-<article class="interest-card">
-
-<div class="interest-number">
-06
+<div class="research-icon">
+📚
 </div>
 
 <h3
-data-en="Education & Technology"
-data-ar="التعليم والتكنولوجيا">
+data-en="Special Education"
+data-ar="التربية الخاصة">
 
-Education &amp; Technology
+Special Education
 
 </h3>
 
 <p
-data-en="Interest in e-learning, educational technology and technology-supported educational practice."
-data-ar="الاهتمام بالتعلم الإلكتروني وتكنولوجيا التعليم والممارسات التعليمية المدعومة بالتكنولوجيا.">
+data-en="Inclusive education, individualized educational planning, teacher preparation and educational support for learners with additional needs."
+data-ar="التعليم الدامج، والتخطيط التربوي الفردي، وإعداد المعلمين، والدعم التعليمي للمتعلمين ذوي الاحتياجات الإضافية.">
 
-Interest in e-learning, educational technology and technology-supported educational practice.
+Inclusive education, individualized educational planning,
+teacher preparation and educational support for learners
+with additional needs.
 
 </p>
 
-<ul>
+</article>
 
-<li
-data-en="E-learning"
-data-ar="التعلم الإلكتروني">
-E-learning
-</li>
 
-<li
-data-en="Educational technology"
-data-ar="تكنولوجيا التعليم">
-Educational technology
-</li>
+<article class="research-card">
 
-<li
-data-en="Digital learning support"
-data-ar="الدعم التعليمي الرقمي">
-Digital learning support
-</li>
+<div class="research-icon">
+💻
+</div>
 
-</ul>
+<h3
+data-en="E-Learning &amp; Educational Technology"
+data-ar="التعلم الإلكتروني وتكنولوجيا التعليم">
+
+E-Learning &amp; Educational Technology
+
+</h3>
+
+<p
+data-en="The use of e-learning and educational technology to support teaching, professional development and special education practice."
+data-ar="استخدام التعلم الإلكتروني وتكنولوجيا التعليم لدعم التدريس والتطوير المهني وممارسات التربية الخاصة.">
+
+The use of e-learning and educational technology
+to support teaching, professional development
+and special education practice.
+
+</p>
 
 </article>
 
@@ -1645,304 +859,86 @@ Digital learning support
 </section>
 
 
-<!-- =====================================================
-     RESEARCH TOPICS
-===================================================== -->
+<!-- =========================
+FEATURED ACADEMIC WORK
+========================= -->
 
-<section class="research-areas">
+<section class="featured">
 
 <div class="container">
-
 
 <div class="section-head">
 
 <h2
-data-en="Potential Research Topics"
-data-ar="مجالات بحثية مقترحة">
+data-en="Featured Academic Work"
+data-ar="أبرز الأعمال الأكاديمية">
 
-Potential Research Topics
+Featured Academic Work
 
 </h2>
 
 <p
-data-en="Areas suitable for future academic studies, professional projects and collaborative research."
-data-ar="مجالات مناسبة للدراسات الأكاديمية المستقبلية والمشروعات المهنية والبحوث التعاونية.">
+data-en="Selected academic work reflected in the professional and academic profile."
+data-ar="نماذج مختارة من العمل الأكاديمي الوارد في الملف المهني والأكاديمي.">
 
-Areas suitable for future academic studies, professional projects and collaborative research.
+Selected academic work reflected in the professional
+and academic profile.
 
 </p>
 
 </div>
 
 
-<div class="area-grid">
-
-
-<div class="area">
+<div class="featured-box">
 
 <h3
-data-en="Autism & Communication"
-data-ar="التوحد والتواصل">
+data-en="Doctoral Research"
+data-ar="البحث في مرحلة الدكتوراه">
 
-Autism &amp; Communication
+Doctoral Research
 
 </h3>
 
 <p
-data-en="Communication and social skills development for individuals with ASD."
-data-ar="تنمية مهارات التواصل والمهارات الاجتماعية لدى الأشخاص ذوي اضطراب طيف التوحد.">
+data-en="PhD in Education – Educational Psychology, Ain Shams University, Cairo, Egypt, 2017."
+data-ar="دكتوراه في التربية – علم النفس التربوي، جامعة عين شمس، القاهرة، مصر، 2017.">
 
-Communication and social skills development for individuals with ASD.
+PhD in Education – Educational Psychology,
+Ain Shams University, Cairo, Egypt, 2017.
 
 </p>
 
-</div>
-
-
-<div class="area">
-
-<h3
-data-en="Behavioral Intervention"
-data-ar="التدخل السلوكي">
-
-Behavioral Intervention
-
-</h3>
 
 <p
-data-en="Behavior assessment and evidence-informed behavioral intervention."
-data-ar="تقييم السلوك والتدخلات السلوكية القائمة على الأدلة.">
+data-en="The doctoral dissertation examined parental love and its role in developing communication skills among children with autism."
+data-ar="تناولت رسالة الدكتوراه الحب الوالدي ودوره في تنمية مهارات التواصل لدى الأطفال ذوي التوحد.">
 
-Behavior assessment and evidence-informed behavioral intervention.
-
-</p>
-
-</div>
-
-
-<div class="area">
-
-<h3
-data-en="Inclusive Education"
-data-ar="التعليم الدامج">
-
-Inclusive Education
-
-</h3>
-
-<p
-data-en="Supporting inclusion and participation of students with disabilities."
-data-ar="دعم دمج ومشاركة الطلاب ذوي الإعاقة في البيئات التعليمية.">
-
-Supporting inclusion and participation of students with disabilities.
+The doctoral dissertation examined parental love
+and its role in developing communication skills
+among children with autism.
 
 </p>
 
-</div>
 
+<div class="highlight">
 
-<div class="area">
+<strong
+data-en="Research focus:"
+data-ar="محور البحث:">
 
-<h3
-data-en="Parent Training"
-data-ar="تدريب الوالدين">
+Research focus:
 
-Parent Training
-
-</h3>
-
-<p
-data-en="Developing practical training models that empower families."
-data-ar="تطوير نماذج تدريب عملية تساعد الأسر وتمكّنها.">
-
-Developing practical training models that empower families.
-
-</p>
-
-</div>
-
-
-<div class="area">
-
-<h3
-data-en="Teacher Development"
-data-ar="تطوير المعلمين">
-
-Teacher Development
-
-</h3>
-
-<p
-data-en="Professional preparation and support for special education teachers."
-data-ar="الإعداد والدعم المهني لمعلمي التربية الخاصة.">
-
-Professional preparation and support for special education teachers.
-
-</p>
-
-</div>
-
-
-<div class="area">
-
-<h3
-data-en="Educational Technology"
-data-ar="تكنولوجيا التعليم">
-
-Educational Technology
-
-</h3>
-
-<p
-data-en="Using technology to support learning, training and educational accessibility."
-data-ar="استخدام التكنولوجيا لدعم التعلم والتدريب وإتاحة التعليم.">
-
-Using technology to support learning, training and educational accessibility.
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     PUBLICATIONS
-===================================================== -->
-
-<section class="publications">
-
-<div class="container">
-
-
-<div class="section-head">
-
-<h2
-data-en="Research & Publications"
-data-ar="البحوث والمنشورات العلمية">
-
-Research &amp; Publications
-
-</h2>
-
-<p
-data-en="A dedicated space for academic publications, conference presentations, research projects and scholarly contributions."
-data-ar="مساحة مخصصة لإضافة المنشورات العلمية والعروض في المؤتمرات والمشروعات البحثية والمساهمات الأكاديمية.">
-
-A dedicated space for academic publications, conference presentations, research projects and scholarly contributions.
-
-</p>
-
-</div>
-
-
-<div class="publication-list">
-
-
-<article class="publication">
-
-<span class="publication-label"
-data-en="Academic Research"
-data-ar="بحث أكاديمي">
-
-Academic Research
-
-</span>
-
-<h3
-data-en="Research on Communication Skills and Autism"
-data-ar="بحث حول مهارات التواصل والتوحد">
-
-Research on Communication Skills and Autism
-
-</h3>
-
-<p
-data-en="Research interests include communication development and interventions supporting communication skills among children with autism spectrum disorder."
-data-ar="تشمل الاهتمامات البحثية تنمية التواصل والتدخلات الداعمة لمهارات التواصل لدى الأطفال ذوي اضطراب طيف التوحد.">
-
-Research interests include communication development and interventions supporting communication skills among children with autism spectrum disorder.
-
-</p>
-
-</article>
-
-
-<article class="publication">
-
-<span class="publication-label"
-data-en="Research Focus"
-data-ar="محور بحثي">
-
-Research Focus
-
-</span>
-
-<h3
-data-en="Applied Behavior Analysis & Positive Behavior Support"
-data-ar="تحليل السلوك التطبيقي ودعم السلوك الإيجابي">
-
-Applied Behavior Analysis &amp; Positive Behavior Support
-
-</h3>
-
-<p
-data-en="Applied research interests focus on behavioral assessment, intervention planning, skill acquisition and positive behavior support."
-data-ar="تركز الاهتمامات البحثية التطبيقية على تقييم السلوك وتخطيط التدخل واكتساب المهارات ودعم السلوك الإيجابي.">
-
-Applied research interests focus on behavioral assessment, intervention planning, skill acquisition and positive behavior support.
-
-</p>
-
-</article>
-
-
-<article class="publication">
-
-<span class="publication-label"
-data-en="Academic Collaboration"
-data-ar="تعاون أكاديمي">
-
-Academic Collaboration
-
-</span>
-
-<h3
-data-en="Collaborative Research & Professional Development"
-data-ar="البحث التعاوني والتطوير المهني">
-
-Collaborative Research &amp; Professional Development
-
-</h3>
-
-<p
-data-en="Opportunities for collaboration with universities, researchers, educators and professionals in special education, psychology and behavior analysis."
-data-ar="إتاحة فرص التعاون مع الجامعات والباحثين والأكاديميين والمهنيين في التربية الخاصة وعلم النفس وتحليل السلوك.">
-
-Opportunities for collaboration with universities, researchers, educators and professionals in special education, psychology and behavior analysis.
-
-</p>
-
-</article>
-
-
-<div class="publication-note">
+</strong>
 
 <span
-data-en="Detailed publication records can be added here as verified academic information becomes available."
-data-ar="يمكن إضافة السجل التفصيلي للمنشورات هنا بعد إدخال البيانات الأكاديمية الموثقة.">
+data-en="Parenting • Communication Skills • Autism • Educational Psychology"
+data-ar="الوالدية • مهارات التواصل • التوحد • علم النفس التربوي">
 
-Detailed publication records can be added here as verified academic information becomes available.
+Parenting • Communication Skills • Autism • Educational Psychology
 
 </span>
 
 </div>
-
 
 </div>
 
@@ -1951,17 +947,15 @@ Detailed publication records can be added here as verified academic information 
 </section>
 
 
-<!-- =====================================================
-     ACADEMIC COLLABORATION
-===================================================== -->
+<!-- =========================
+ACADEMIC COLLABORATION
+========================= -->
 
 <section class="collaboration">
 
 <div class="container">
 
-
-<div class="collaboration-box">
-
+<div class="section-head">
 
 <h2
 data-en="Academic Collaboration"
@@ -1971,36 +965,91 @@ Academic Collaboration
 
 </h2>
 
-
 <p
-data-en="FOUDA ABA welcomes opportunities for academic collaboration, professional training, research projects, student workshops, knowledge exchange and evidence-informed practice in the fields of special education, educational psychology, autism and applied behavior analysis."
-data-ar="يرحب FOUDA ABA بفرص التعاون الأكاديمي والتدريب المهني والمشروعات البحثية وورش العمل للطلبة وتبادل المعرفة والممارسات القائمة على الأدلة في مجالات التربية الخاصة وعلم النفس التربوي والتوحد وتحليل السلوك التطبيقي.">
+data-en="Connecting academic knowledge with professional practice through collaboration, training and research."
+data-ar="ربط المعرفة الأكاديمية بالممارسة المهنية من خلال التعاون والتدريب والبحث العلمي.">
 
-FOUDA ABA welcomes opportunities for academic collaboration, professional training, research projects, student workshops, knowledge exchange and evidence-informed practice in the fields of special education, educational psychology, autism and applied behavior analysis.
+Connecting academic knowledge with professional practice
+through collaboration, training and research.
 
 </p>
 
-
-<a
-href="contact.html"
-class="btn btn-primary"
-data-en="Research Inquiry"
-data-ar="استفسار بحثي">
-
-Research Inquiry
-
-</a>
+</div>
 
 
-<a
-href="about.html"
-class="btn btn-secondary"
-data-en="About Dr. Mohamed"
-data-ar="عن د. محمد">
+<div class="collaboration-grid">
 
-About Dr. Mohamed
 
-</a>
+<div class="collab-card">
+
+<h3
+data-en="Universities &amp; Academic Institutions"
+data-ar="الجامعات والمؤسسات الأكاديمية">
+
+Universities &amp; Academic Institutions
+
+</h3>
+
+<p
+data-en="Academic collaboration may include lectures, workshops, student training, research discussions and professional knowledge sharing."
+data-ar="يمكن أن يشمل التعاون الأكاديمي المحاضرات وورش العمل وتدريب الطلبة والمناقشات البحثية وتبادل المعرفة المهنية.">
+
+Academic collaboration may include lectures,
+workshops, student training, research discussions
+and professional knowledge sharing.
+
+</p>
+
+</div>
+
+
+<div class="collab-card">
+
+<h3
+data-en="Professional Collaboration"
+data-ar="التعاون المهني">
+
+Professional Collaboration
+
+</h3>
+
+<ul>
+
+<li
+data-en="Behavioral and educational consultation"
+data-ar="الاستشارات السلوكية والتربوية">
+
+Behavioral and educational consultation
+
+</li>
+
+<li
+data-en="Professional training and workshops"
+data-ar="التدريب المهني وورش العمل">
+
+Professional training and workshops
+
+</li>
+
+<li
+data-en="Case discussions and supervision"
+data-ar="مناقشة الحالات والإشراف">
+
+Case discussions and supervision
+
+</li>
+
+<li
+data-en="Research and academic projects"
+data-ar="المشروعات البحثية والأكاديمية">
+
+Research and academic projects
+
+</li>
+
+</ul>
+
+</div>
 
 
 </div>
@@ -2010,12 +1059,278 @@ About Dr. Mohamed
 </section>
 
 
+<!-- =========================
+PUBLICATIONS
+========================= -->
+
+<section class="publications">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2
+data-en="Publications &amp; Academic Contributions"
+data-ar="الأبحاث والمنشورات والمساهمات الأكاديمية">
+
+Publications &amp; Academic Contributions
+
+</h2>
+
+<p
+data-en="This section can be expanded as publications, conference presentations and research projects are added."
+data-ar="يمكن تطوير هذا القسم وإضافة الأبحاث المنشورة والمؤتمرات والمشروعات البحثية تدريجيًا.">
+
+This section can be expanded as publications,
+conference presentations and research projects are added.
+
+</p>
+
+</div>
+
+
+<div class="publication-list">
+
+
+<div class="publication">
+
+<h3
+data-en="Research &amp; Publications"
+data-ar="الأبحاث والمنشورات">
+
+Research &amp; Publications
+
+</h3>
+
+<p
+data-en="Academic and applied research related to behavior analysis, special education, autism, communication and developmental support."
+data-ar="أبحاث أكاديمية وتطبيقية مرتبطة بتحليل السلوك، والتربية الخاصة، والتوحد، والتواصل والدعم النمائي.">
+
+Academic and applied research related to behavior analysis,
+special education, autism, communication and developmental support.
+
+</p>
+
+</div>
+
+
+<div class="publication">
+
+<h3
+data-en="Knowledge Sharing &amp; Professional Development"
+data-ar="نشر المعرفة والتطوير المهني">
+
+Knowledge Sharing &amp; Professional Development
+
+</h3>
+
+<p
+data-en="Professional workshops, lectures and academic activities designed to connect research evidence with practical educational and behavioral services."
+data-ar="ورش العمل والمحاضرات والأنشطة الأكاديمية التي تهدف إلى ربط الأدلة البحثية بالخدمات التعليمية والسلوكية التطبيقية.">
+
+Professional workshops, lectures and academic activities
+designed to connect research evidence with practical
+educational and behavioral services.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+RESEARCH PROFILE
+========================= -->
+
+<section class="profile-section">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2
+data-en="Research Profile"
+data-ar="الملف البحثي">
+
+Research Profile
+
+</h2>
+
+<p
+data-en="A professional profile supporting evidence-informed practice and academic development."
+data-ar="ملف مهني يدعم الممارسة القائمة على الأدلة والتطوير الأكاديمي.">
+
+A professional profile supporting evidence-informed
+practice and academic development.
+
+</p>
+
+</div>
+
+
+<div class="profile-box">
+
+
+<div class="profile-item">
+
+<h3
+data-en="Evidence-Based Practice"
+data-ar="الممارسة القائمة على الأدلة">
+
+Evidence-Based Practice
+
+</h3>
+
+<p
+data-en="Emphasis on translating scientific evidence into practical behavioral and educational strategies."
+data-ar="التركيز على تحويل الأدلة العلمية إلى استراتيجيات سلوكية وتربوية تطبيقية.">
+
+Emphasis on translating scientific evidence into
+practical behavioral and educational strategies.
+
+</p>
+
+</div>
+
+
+<div class="profile-item">
+
+<h3
+data-en="Applied Research"
+data-ar="البحث التطبيقي">
+
+Applied Research
+
+</h3>
+
+<p
+data-en="Interest in research questions that have practical relevance for learners, families, educators and professionals."
+data-ar="الاهتمام بالموضوعات البحثية ذات الصلة العملية بالمتعلمين والأسر والمعلمين والمتخصصين.">
+
+Interest in research questions that have practical
+relevance for learners, families, educators and professionals.
+
+</p>
+
+</div>
+
+
+<div class="profile-item">
+
+<h3
+data-en="Professional Training"
+data-ar="التدريب المهني">
+
+Professional Training
+
+</h3>
+
+<p
+data-en="Using research-informed training to strengthen professional knowledge and practical skills."
+data-ar="استخدام التدريب المستند إلى البحث العلمي لتعزيز المعرفة المهنية والمهارات التطبيقية.">
+
+Using research-informed training to strengthen
+professional knowledge and practical skills.
+
+</p>
+
+</div>
+
+
+<div class="profile-item">
+
+<h3
+data-en="Future Research"
+data-ar="البحث المستقبلي">
+
+Future Research
+
+</h3>
+
+<p
+data-en="Future projects may develop around autism, ABA, communication, family involvement, special education and educational technology."
+data-ar="يمكن أن تتطور المشروعات البحثية المستقبلية حول التوحد، وتحليل السلوك التطبيقي، والتواصل، ومشاركة الأسرة، والتربية الخاصة وتكنولوجيا التعليم.">
+
+Future projects may develop around autism, ABA,
+communication, family involvement, special education
+and educational technology.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2
+data-en="Research &amp; Academic Collaboration"
+data-ar="البحث العلمي والتعاون الأكاديمي">
+
+Research &amp; Academic Collaboration
+
+</h2>
+
+<p
+data-en="For academic collaboration, research discussions, professional training and educational or behavioral projects, please get in touch."
+data-ar="للتعاون الأكاديمي، والمناقشات البحثية، والتدريب المهني، والمشروعات التعليمية أو السلوكية، يمكنكم التواصل معنا.">
+
+For academic collaboration, research discussions,
+professional training and educational or behavioral
+projects, please get in touch.
+
+</p>
+
+
+<a
+class="btn btn-primary"
+href="contact.html"
+data-en="Contact Dr. Mohamed"
+data-ar="تواصل مع د. محمد">
+
+Contact Dr. Mohamed
+
+</a>
+
+
+<a
+class="btn btn-secondary"
+href="index.html"
+data-en="Back to Home"
+data-ar="العودة للرئيسية">
+
+Back to Home
+
+</a>
+
+</div>
+
+</section>
+
 </main>
 
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<!-- =========================
+FOOTER
+========================= -->
 
 <footer>
 
@@ -2030,9 +1345,7 @@ Dr. Mohamed Gamal Awad Fouda
 </p>
 
 <p>
-foudaadc@gmail.com
-&nbsp; | &nbsp;
-+971 50 176 6163
+foudaadc@gmail.com &nbsp; | &nbsp; +971 50 176 6163
 </p>
 
 </div>
@@ -2040,50 +1353,31 @@ foudaadc@gmail.com
 </footer>
 
 
-<!-- =====================================================
-     LANGUAGE SCRIPT
-===================================================== -->
+<!-- =========================
+LANGUAGE
+========================= -->
 
 <script>
 
-let ar = false;
+let ar=false;
 
+document.getElementById("lang").onclick=function(){
 
-document.getElementById("lang").onclick = function(){
+ar=!ar;
 
-  ar = !ar;
+document.body.classList.toggle("rtl",ar);
 
+document.documentElement.lang=ar?"ar":"en";
 
-  document.body.classList.toggle(
-    "rtl",
-    ar
-  );
+document.documentElement.dir=ar?"rtl":"ltr";
 
+document.querySelectorAll("[data-en]").forEach(function(el){
 
-  document.documentElement.lang =
-    ar ? "ar" : "en";
+el.textContent=ar?el.dataset.ar:el.dataset.en;
 
+});
 
-  document.documentElement.dir =
-    ar ? "rtl" : "ltr";
-
-
-  document
-    .querySelectorAll("[data-en]")
-    .forEach(function(el){
-
-      el.textContent =
-        ar
-        ? el.dataset.ar
-        : el.dataset.en;
-
-    });
-
-
-  this.textContent =
-    ar
-    ? "English"
-    : "العربية";
+this.textContent=ar?"English":"العربية";
 
 };
 
@@ -2091,5 +1385,4 @@ document.getElementById("lang").onclick = function(){
 
 
 </body>
-
 </html>
